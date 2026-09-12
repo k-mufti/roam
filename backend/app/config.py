@@ -52,7 +52,14 @@ CITIES: dict[str, CityConfig] = {
         search_radius_m=8000,
         timezone="Europe/Madrid",
         subreddits=("madrid", "spain", "askspain", "travel"),
-        blog_sources=("timeout-madrid",),
+        blog_sources=(
+            "wikivoyage-madrid",
+            "wikivoyage-madrid-salamanca",
+            "wikivoyage-madrid-chamberi",
+            "wikivoyage-madrid-retiro",
+            "wikivoyage-madrid-moncloa",
+            "wikivoyage-madrid-arganzuela",
+        ),
     ),
 }
 

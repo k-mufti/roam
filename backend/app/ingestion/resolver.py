@@ -21,11 +21,31 @@ Strategy — blocking, then scoring, then a three-way decision:
    rather than by typos — `token_set_ratio` ignores extra tokens that both
    strings don't share, where plain Levenshtein would penalize them heavily.
 
-4. **Decision.** Above `AUTO_MERGE_CONFIDENCE` we merge. Below
-   `REVIEW_CONFIDENCE` we create a new place. **In between we do neither
-   silently**: we create the place *and* write a `MergeReview` row so a human
-   can adjudicate. Guessing in the ambiguous band is how dedup pipelines
-   quietly corrupt their own data.
+4. **Decision.** A *distance-tiered rule table* (`MERGE_RULES`), not one
+   blended threshold. An earlier version scored name similarity and proximity
+   into a single number and merged above a cutoff; it failed on real data,
+   flagging four pairs that were unmistakably the same place 14-15m apart
+   ("Museo del Prado" / "Museo Nacional del Prado", "Retiro Park" / "Parque de
+   El Retiro"), because cross-language names only reach ~0.67 fuzzy similarity
+   and a linear blend cannot express "at 15m the names barely need to agree".
+
+   The tiers encode what distance actually means:
+
+   * **Same footprint (<=40m)** — almost certainly one building, so a
+     *distinctive shared token* is enough ("retiro", "prado", "botin"). This
+     is where cross-language and abbreviated names get resolved.
+   * **Same block (<=120m)** — names must agree strongly on their own.
+   * **Same street (<=250m)** — near-identical names only.
+
+   The distinctive-token requirement in tier 1 is what stops distance alone
+   from over-merging: stalls inside a food hall are metres apart, and "Casa
+   Lucio" / "Casa Botín" are 40m apart, but "casa" is a generic token and
+   contributes no anchor, so they are not merged.
+
+5. **Never guess in between.** If no rule fires but confidence still clears
+   `REVIEW_CONFIDENCE`, we create the place *and* write a `MergeReview` row for
+   a human. Guessing in the ambiguous band is how dedup pipelines quietly
+   corrupt their own data.
 
 Coordinate-less mentions (Reddit, blog) take a stricter path: name-only match
 against places an authoritative source already geocoded, at a much higher
@@ -35,6 +55,7 @@ threshold, and are dropped if nothing matches.
 from __future__ import annotations
 
 import logging
+import re
 from dataclasses import dataclass
 from datetime import UTC, datetime
 
@@ -43,7 +64,12 @@ from sqlalchemy import func, or_, select
 from sqlalchemy.orm import Session
 
 from app.ingestion.base import RawPlace
-from app.ingestion.normalize import content_hash, haversine_m, normalize_name
+from app.ingestion.normalize import (
+    content_hash,
+    distinctive_tokens,
+    haversine_m,
+    normalize_name,
+)
 from app.models import MergeDecision, MergeReview, Place, PlaceCategory, SourceSignal, TextEvidence
 
 log = logging.getLogger(__name__)
@@ -55,21 +81,65 @@ log = logging.getLogger(__name__)
 #: Candidate blocking radius. Generous on purpose — cheap to over-fetch here,
 #: expensive to miss a true duplicate.
 BLOCK_RADIUS_M = 400.0
-#: Beyond this, two records are not the same building, whatever the names say.
+#: Beyond this, two records are not the same place, whatever the names say.
 MAX_MERGE_DISTANCE_M = 250.0
-#: Minimum fuzzy name similarity (0-1) for a pair to be considered at all.
+#: Minimum fuzzy name similarity for a pair to be scored at all.
 MIN_NAME_SIMILARITY = 0.55
-#: Blend weights for the confidence score.
-NAME_WEIGHT = 0.65
-DISTANCE_WEIGHT = 0.35
 
-AUTO_MERGE_CONFIDENCE = 0.86
+
+@dataclass(frozen=True, slots=True)
+class MergeRule:
+    """One tier of the merge decision table."""
+
+    max_distance_m: float
+    min_name_similarity: float
+    #: Require a shared distinctive (non-generic, >=4 char) name token.
+    requires_anchor: bool
+    label: str
+
+
+#: Evaluated in order; the first rule whose conditions hold authorizes a merge.
+MERGE_RULES: tuple[MergeRule, ...] = (
+    MergeRule(40.0, 0.62, True, "same footprint + shared distinctive token"),
+    MergeRule(120.0, 0.80, False, "same block + strong name agreement"),
+    MergeRule(250.0, 0.92, False, "same street + near-identical name"),
+)
+
+#: Confidence at/above which an unmerged pair is still worth a human's time.
 REVIEW_CONFIDENCE = 0.62
+#: ...but confidence alone is not enough to enter the review queue. Proximity
+#: contributes up to 0.45, so in a dense city centre *any* two records 15m apart
+#: clear REVIEW_CONFIDENCE regardless of their names — which would fill the
+#: queue with pairs like "Casa Dani" (a stall) and "Mercado de la Paz" (the
+#: market containing it). A pair must also be nameally confusable to be worth
+#: a human's attention.
+REVIEW_MIN_NAME_SIMILARITY = 0.60
 
-#: Coordinate-less mentions need near-certainty on the name alone.
+#: Half-distance of the proximity curve: proximity(90m) == 0.5. The curve is
+#: 1/(1+(d/d_half)^2) rather than linear because co-location is sharply more
+#: informative at short range — 15m and 40m are both "same building", while
+#: 150m and 250m are both "probably not".
+PROXIMITY_HALF_DISTANCE_M = 90.0
+
+#: Coordinate-less mentions need near-certainty on the name alone...
 NAME_ONLY_SIMILARITY = 0.90
-#: ...and are only matched within this radius of the city centre.
-NAME_ONLY_CITY_SCOPE = True
+#: ...*or* an unambiguous distinctive-token containment. Forum prose abbreviates
+#: constantly — "the Prado", "Retiro", "Botin", "Thyssen" — and those score only
+#: 0.67-0.82 against the full official names, so a similarity-only rule discards
+#: some of the strongest signals in the corpus. Containment is accepted when the
+#: mention's distinctive tokens are a subset of exactly one candidate's, which is
+#: what keeps it safe: "Guernica" and "Malasana" contain nothing, and an
+#: abbreviation matching two places is ambiguous and dropped rather than guessed.
+NAME_ONLY_ALLOW_TOKEN_CONTAINMENT = True
+
+#: Extra-field combination rules for sources that emit one signal per *mention*
+#: but must persist one signal per *place* (Reddit: "Prado" and "Museo del
+#: Prado" are two mentions of one place). Without this the place would collect
+#: two Reddit signals and be double-counted in scoring.
+ADDITIVE_EXTRA_KEYS = frozenset({"mention_count", "upvotes", "thread_count"})
+MAX_EXTRA_KEYS = frozenset({"thread_score"})
+#: Averaged, weighted by `upvotes`, so a 900-upvote opinion dominates a 5-upvote one.
+UPVOTE_WEIGHTED_EXTRA_KEYS = frozenset({"sentiment"})
 
 
 @dataclass(slots=True)
@@ -121,12 +191,40 @@ def name_similarity(left: str, right: str) -> float:
     return (generous + strict) / 2.0
 
 
-def merge_confidence(name_sim: float, distance_m: float) -> float:
-    """Blend name similarity and proximity into a single 0-1 confidence."""
+def proximity_score(distance_m: float) -> float:
+    """Non-linear closeness in 0-1. See PROXIMITY_HALF_DISTANCE_M."""
+    if distance_m <= 0:
+        return 1.0
+    ratio = distance_m / PROXIMITY_HALF_DISTANCE_M
+    return 1.0 / (1.0 + ratio * ratio)
+
+
+def merge_confidence(name_sim: float, distance_m: float, anchored: bool = False) -> float:
+    """A single auditable 0-1 number for the pair.
+
+    This no longer *decides* the merge — `MERGE_RULES` does — but it is stored
+    on the place and in `merge_reviews`, and it orders the human review queue,
+    so it still needs to be meaningful.
+    """
     if distance_m > MAX_MERGE_DISTANCE_M:
         return 0.0
-    proximity = max(0.0, 1.0 - (distance_m / MAX_MERGE_DISTANCE_M))
-    return NAME_WEIGHT * name_sim + DISTANCE_WEIGHT * proximity
+    score = 0.55 * name_sim + 0.45 * proximity_score(distance_m)
+    if anchored:
+        score += 0.05
+    return min(1.0, score)
+
+
+def matching_rule(name_sim: float, distance_m: float, anchored: bool) -> MergeRule | None:
+    """First merge rule the pair satisfies, or None."""
+    for rule in MERGE_RULES:
+        if distance_m > rule.max_distance_m:
+            continue
+        if name_sim < rule.min_name_similarity:
+            continue
+        if rule.requires_anchor and not anchored:
+            continue
+        return rule
+    return None
 
 
 class EntityResolver:
@@ -174,43 +272,50 @@ class EntityResolver:
         key = normalize_name(raw.name)
         candidates = self._block_candidates(raw, key)
 
-        best: tuple[float, float, float, Place] | None = None  # conf, name_sim, dist, place
+        anchors = distinctive_tokens(key)
+
+        best: tuple[float, float, float, bool, MergeRule | None, Place] | None = None
         for cand in candidates:
             sim = name_similarity(key, cand.name_normalized)
             if sim < MIN_NAME_SIMILARITY:
                 continue
             dist = haversine_m(raw.lat, raw.lng, cand.lat, cand.lng)
-            conf = merge_confidence(sim, dist)
-            if best is None or conf > best[0]:
-                best = (conf, sim, dist, cand)
+            anchored = bool(anchors & distinctive_tokens(cand.name_normalized))
+            rule = matching_rule(sim, dist, anchored)
+            conf = merge_confidence(sim, dist, anchored)
+            # Prefer a candidate a rule authorizes; break ties on confidence.
+            ranking = (rule is not None, conf)
+            if best is None or ranking > (best[4] is not None, best[0]):
+                best = (conf, sim, dist, anchored, rule, cand)
 
         if best is None:
             return ResolutionOutcome(
                 self._create_place(raw), MergeDecision.CREATED, 0.0, "no similar candidate"
             )
 
-        conf, sim, dist, cand = best
+        conf, sim, dist, anchored, rule, cand = best
 
-        if conf >= AUTO_MERGE_CONFIDENCE:
+        if rule is not None:
+            cand.merge_confidence = conf
             self.stats.merged += 1
             return ResolutionOutcome(
                 cand,
                 MergeDecision.MERGED,
                 conf,
-                f"name_sim={sim:.2f} distance={dist:.0f}m",
+                f"{rule.label} (name_sim={sim:.2f} distance={dist:.0f}m)",
             )
 
         place = self._create_place(raw)
-        if conf >= REVIEW_CONFIDENCE:
-            # The ambiguous band: plausible duplicate, not confident enough to
-            # act. Keep both rows, record the pair, move on.
-            self._flag(place, cand, sim, dist, conf)
+        if conf >= REVIEW_CONFIDENCE and sim >= REVIEW_MIN_NAME_SIMILARITY:
+            # Plausible duplicate, but no rule authorizes it. Keep both rows,
+            # record the pair for a human, move on.
+            self._flag(place, cand, sim, dist, conf, anchored)
             self.stats.flagged += 1
             return ResolutionOutcome(
                 place,
                 MergeDecision.FLAGGED,
                 conf,
-                f"ambiguous: name_sim={sim:.2f} distance={dist:.0f}m",
+                f"ambiguous: name_sim={sim:.2f} distance={dist:.0f}m anchored={anchored}",
             )
         return ResolutionOutcome(
             place, MergeDecision.CREATED, conf, f"best candidate too weak (conf={conf:.2f})"
@@ -229,37 +334,66 @@ class EntityResolver:
             self.stats.dropped += 1
             return ResolutionOutcome(None, MergeDecision.CREATED, 0.0, "empty normalized name")
 
+        anchors = distinctive_tokens(key)
+        conditions = [
+            Place.name_normalized == key,
+            func.similarity(Place.name_normalized, key) > 0.4,
+        ]
+        if anchors:
+            # Word-boundary match on any distinctive token, so "prado" finds
+            # "museo nacional del prado" (trigram similarity alone would not:
+            # the strings differ too much in length).
+            pattern = r"\y(" + "|".join(re.escape(t) for t in sorted(anchors)) + r")\y"
+            conditions.append(Place.name_normalized.op("~")(pattern))
+
         stmt = (
             select(Place)
-            .where(
-                Place.city == raw.city,
-                Place.duplicate_of.is_(None),
-                or_(
-                    Place.name_normalized == key,
-                    func.similarity(Place.name_normalized, key) > 0.4,
-                ),
-            )
-            .limit(25)
+            .where(Place.city == raw.city, Place.duplicate_of.is_(None), or_(*conditions))
+            .limit(50)
         )
+        candidates = list(self.session.execute(stmt).scalars())
+
         best: tuple[float, Place] | None = None
-        for cand in self.session.execute(stmt).scalars():
+        contained: list[Place] = []
+        for cand in candidates:
             sim = name_similarity(key, cand.name_normalized)
             if best is None or sim > best[0]:
                 best = (sim, cand)
+            if anchors and anchors <= distinctive_tokens(cand.name_normalized):
+                contained.append(cand)
 
-        if best is None or best[0] < NAME_ONLY_SIMILARITY:
-            self.stats.dropped += 1
-            got = f"{best[0]:.2f}" if best else "none"
+        if best is not None and best[0] >= NAME_ONLY_SIMILARITY:
+            sim, cand = best
+            self.stats.merged += 1
             return ResolutionOutcome(
-                None,
-                MergeDecision.CREATED,
-                best[0] if best else 0.0,
-                f"no geocoded place matched {raw.name!r} (best={got})",
+                cand, MergeDecision.MERGED, sim, f"name-only match sim={sim:.2f}"
             )
 
-        sim, cand = best
-        self.stats.merged += 1
-        return ResolutionOutcome(cand, MergeDecision.MERGED, sim, f"name-only match sim={sim:.2f}")
+        if NAME_ONLY_ALLOW_TOKEN_CONTAINMENT and len(contained) == 1:
+            cand = contained[0]
+            sim = name_similarity(key, cand.name_normalized)
+            self.stats.merged += 1
+            return ResolutionOutcome(
+                cand,
+                MergeDecision.MERGED,
+                max(sim, 0.85),
+                f"distinctive tokens {sorted(anchors)} uniquely contained in "
+                f"{cand.name!r} (sim={sim:.2f})",
+            )
+
+        self.stats.dropped += 1
+        got = f"{best[0]:.2f}" if best else "none"
+        detail = (
+            f" (ambiguous: {len(contained)} places contain {sorted(anchors)})"
+            if len(contained) > 1
+            else ""
+        )
+        return ResolutionOutcome(
+            None,
+            MergeDecision.CREATED,
+            best[0] if best else 0.0,
+            f"no geocoded place matched {raw.name!r} (best={got}){detail}",
+        )
 
     # --- persistence helpers ------------------------------------------------
 
@@ -309,6 +443,28 @@ class EntityResolver:
         return place
 
     def _apply_signal(self, place: Place, raw: RawPlace, existing: SourceSignal | None) -> None:
+        """Write the source's signal, maintaining one signal per (place, source).
+
+        That invariant is what `Place.source_signals` means in the spec — "one
+        entry per source that mentions this place" — and scoring depends on it:
+        two Reddit rows for the Prado would count Reddit twice, both inflating
+        its weight and faking cross-source corroboration.
+        """
+        if existing is None:
+            existing = self.session.execute(
+                select(SourceSignal).where(
+                    SourceSignal.place_id == place.id, SourceSignal.source == raw.source
+                )
+            ).scalars().first()
+
+        if existing is not None and existing.source_place_id != raw.source_place_id:
+            # Same source, same place, different mention identity: combine
+            # instead of inserting a second row.
+            self._combine_signal(existing, raw)
+            self._attach_evidence(place, raw)
+            self.session.flush()
+            return
+
         signal = existing or SourceSignal(
             place_id=place.id, source=raw.source, source_place_id=raw.source_place_id
         )
@@ -324,6 +480,46 @@ class EntityResolver:
             self.session.add(signal)
         self._attach_evidence(place, raw)
         self.session.flush()
+
+    @staticmethod
+    def _combine_signal(signal: SourceSignal, raw: RawPlace) -> None:
+        """Fold a second mention of the same place into an existing signal."""
+        merged = dict(signal.extra or {})
+        incoming = raw.extra or {}
+
+        old_weight = float(merged.get("upvotes") or 0) + 1.0
+        new_weight = float(incoming.get("upvotes") or 0) + 1.0
+
+        for field in UPVOTE_WEIGHTED_EXTRA_KEYS:
+            if field in incoming or field in merged:
+                old = float(merged.get(field) or 0.0)
+                new = float(incoming.get(field) or 0.0)
+                merged[field] = round(
+                    (old * old_weight + new * new_weight) / (old_weight + new_weight), 4
+                )
+        for field in ADDITIVE_EXTRA_KEYS:
+            if field in incoming or field in merged:
+                merged[field] = (merged.get(field) or 0) + (incoming.get(field) or 0)
+        for field in MAX_EXTRA_KEYS:
+            if field in incoming or field in merged:
+                merged[field] = max(merged.get(field) or 0, incoming.get(field) or 0)
+        for field, value in incoming.items():
+            if field not in merged:
+                merged[field] = value
+        if isinstance(merged.get("subreddits"), list) and isinstance(
+            incoming.get("subreddits"), list
+        ):
+            merged["subreddits"] = sorted(set(merged["subreddits"]) | set(incoming["subreddits"]))
+
+        merged["merged_mentions"] = int(merged.get("merged_mentions") or 1) + 1
+        signal.extra = merged
+        signal.review_count = (signal.review_count or 0) + (raw.review_count or 0)
+        if raw.observed_at and (
+            signal.observed_at is None or raw.observed_at > signal.observed_at
+        ):
+            signal.observed_at = raw.observed_at
+        signal.url = signal.url or raw.url
+        signal.last_updated = datetime.now(UTC)
 
     def _attach_evidence(self, place: Place, raw: RawPlace) -> None:
         if not raw.evidence:
@@ -376,7 +572,13 @@ class EntityResolver:
             place.category = raw.category
 
     def _flag(
-        self, left: Place, right: Place, name_sim: float, distance_m: float, confidence: float
+        self,
+        left: Place,
+        right: Place,
+        name_sim: float,
+        distance_m: float,
+        confidence: float,
+        anchored: bool = False,
     ) -> None:
         pair = tuple(sorted([str(left.id), str(right.id)]))
         exists = self.session.execute(
@@ -395,8 +597,10 @@ class EntityResolver:
                 distance_m=distance_m,
                 confidence=confidence,
                 reason=(
-                    f"{left.name!r} vs {right.name!r}: confidence {confidence:.2f} falls in the "
-                    f"ambiguous band [{REVIEW_CONFIDENCE}, {AUTO_MERGE_CONFIDENCE})"
+                    f"{left.name!r} vs {right.name!r}: no merge rule matched "
+                    f"(name_sim={name_sim:.2f}, distance={distance_m:.0f}m, "
+                    f"shared_distinctive_token={anchored}) but confidence "
+                    f"{confidence:.2f} >= {REVIEW_CONFIDENCE}"
                 ),
             )
         )

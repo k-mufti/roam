@@ -1,0 +1,850 @@
+{
+  "_fixture_note": "Recorded-shape Reddit OAuth API responses: `thread` matches /r/{sub}/search children[].data, `comments` matches the two-element array /comments/{id} returns. Text is written to resemble real r/madrid prose (disagreement, code-switching, missing accents, sarcasm) because that is what the extractor and sentiment scoring have to survive. Timestamps are relative to fixture generation so recency decay stays meaningful.",
+  "threads": [
+    {
+      "thread": {
+        "id": "fx000",
+        "title": "Best restaurants in Madrid that aren't tourist traps?",
+        "selftext": "Visiting for 5 days in October. I keep seeing the same 10 places on every blog and I'm suspicious. What do locals actually eat?",
+        "score": 2847,
+        "num_comments": 312,
+        "subreddit": "madrid",
+        "created_utc": 1786317869,
+        "permalink": "/r/madrid/comments/fx000/best_restaurants_in_madrid_that_aren't/",
+        "upvote_ratio": 0.94,
+        "author": "fixture_user",
+        "over_18": false
+      },
+      "comments": [
+        {
+          "kind": "Listing",
+          "data": {
+            "children": [
+              {
+                "kind": "t3",
+                "data": {
+                  "id": "fx000",
+                  "title": "Best restaurants in Madrid that aren't tourist traps?",
+                  "selftext": "Visiting for 5 days in October. I keep seeing the same 10 places on every blog and I'm suspicious. What do locals actually eat?",
+                  "score": 2847,
+                  "num_comments": 312,
+                  "subreddit": "madrid",
+                  "created_utc": 1786317869,
+                  "permalink": "/r/madrid/comments/fx000/best_restaurants_in_madrid_that_aren't/",
+                  "upvote_ratio": 0.94,
+                  "author": "fixture_user",
+                  "over_18": false
+                }
+              }
+            ]
+          }
+        },
+        {
+          "kind": "Listing",
+          "data": {
+            "children": [
+              {
+                "kind": "t1",
+                "data": {
+                  "id": "fx000c00",
+                  "body": "Casa Dani in Mercado de la Paz. Their tortilla de patatas is genuinely the best in the city and it costs almost nothing. Go before 1pm or you'll queue forever.",
+                  "score": 892,
+                  "created_utc": 1786317869,
+                  "permalink": "/r/madrid/comments/fx000/best_restaurants_in_madrid_that_aren't/comment/fx000c00/",
+                  "author": "fixture_user",
+                  "replies": ""
+                }
+              },
+              {
+                "kind": "t1",
+                "data": {
+                  "id": "fx000c01",
+                  "body": "Skip Sobrino de Botin. I know it's the oldest restaurant in the world but it's a tourist trap now, overpriced and the service is rushed.",
+                  "score": 671,
+                  "created_utc": 1786317869,
+                  "permalink": "/r/madrid/comments/fx000/best_restaurants_in_madrid_that_aren't/comment/fx000c01/",
+                  "author": "fixture_user",
+                  "replies": ""
+                }
+              },
+              {
+                "kind": "t1",
+                "data": {
+                  "id": "fx000c02",
+                  "body": "Disagree on Botin honestly. Yes it's touristy but the cochinillo is still excellent. Just don't expect a local crowd.",
+                  "score": 203,
+                  "created_utc": 1786404269,
+                  "permalink": "/r/madrid/comments/fx000/best_restaurants_in_madrid_that_aren't/comment/fx000c02/",
+                  "author": "fixture_user",
+                  "replies": ""
+                }
+              },
+              {
+                "kind": "t1",
+                "data": {
+                  "id": "fx000c03",
+                  "body": "Casa Julio for croquetas. Tiny place, standing room only, unbeatable value. It's a Malasana institution.",
+                  "score": 534,
+                  "created_utc": 1786404269,
+                  "permalink": "/r/madrid/comments/fx000/best_restaurants_in_madrid_that_aren't/comment/fx000c03/",
+                  "author": "fixture_user",
+                  "replies": ""
+                }
+              },
+              {
+                "kind": "t1",
+                "data": {
+                  "id": "fx000c04",
+                  "body": "La Venencia if you like sherry. No photos allowed, no tips, they chalk your tab on the bar. Quiet and atmospheric, feels frozen in 1935.",
+                  "score": 488,
+                  "created_utc": 1786404269,
+                  "permalink": "/r/madrid/comments/fx000/best_restaurants_in_madrid_that_aren't/comment/fx000c04/",
+                  "author": "fixture_user",
+                  "replies": ""
+                }
+              },
+              {
+                "kind": "t1",
+                "data": {
+                  "id": "fx000c05",
+                  "body": "Taberna La Bola for cocido. It's a two hour lunch and worth every minute. Very traditional, family run, quiet dining room.",
+                  "score": 341,
+                  "created_utc": 1786490669,
+                  "permalink": "/r/madrid/comments/fx000/best_restaurants_in_madrid_that_aren't/comment/fx000c05/",
+                  "author": "fixture_user",
+                  "replies": ""
+                }
+              },
+              {
+                "kind": "t1",
+                "data": {
+                  "id": "fx000c06",
+                  "body": "El Tigre if you're on a budget. Buy a drink get a mountain of free tapas. Absolutely chaotic and loud, great for a group of friends.",
+                  "score": 297,
+                  "created_utc": 1786490669,
+                  "permalink": "/r/madrid/comments/fx000/best_restaurants_in_madrid_that_aren't/comment/fx000c06/",
+                  "author": "fixture_user",
+                  "replies": ""
+                }
+              },
+              {
+                "kind": "t1",
+                "data": {
+                  "id": "fx000c07",
+                  "body": "Casa Lucio for huevos rotos. Touristy but the food holds up. Lunch is calmer than dinner.",
+                  "score": 188,
+                  "created_utc": 1786577069,
+                  "permalink": "/r/madrid/comments/fx000/best_restaurants_in_madrid_that_aren't/comment/fx000c07/",
+                  "author": "fixture_user",
+                  "replies": ""
+                }
+              },
+              {
+                "kind": "t1",
+                "data": {
+                  "id": "fx000c08",
+                  "body": "Restaurante Sacha is where chefs eat. Underrated and not on any blog list. Book ahead.",
+                  "score": 276,
+                  "created_utc": 1786577069,
+                  "permalink": "/r/madrid/comments/fx000/best_restaurants_in_madrid_that_aren't/comment/fx000c08/",
+                  "author": "fixture_user",
+                  "replies": ""
+                }
+              },
+              {
+                "kind": "t1",
+                "data": {
+                  "id": "fx000c09",
+                  "body": "El Sur in Lavapies. Small neighbourhood spot, short daily menu, very reasonable. Perfect for a solo dinner.",
+                  "score": 142,
+                  "created_utc": 1786663469,
+                  "permalink": "/r/madrid/comments/fx000/best_restaurants_in_madrid_that_aren't/comment/fx000c09/",
+                  "author": "fixture_user",
+                  "replies": ""
+                }
+              },
+              {
+                "kind": "t1",
+                "data": {
+                  "id": "fx000c10",
+                  "body": "Lhardy is a bit of a time capsule. The consomme counter is a nice quick stop but the dining room is expensive and stuffy.",
+                  "score": 96,
+                  "created_utc": 1786663469,
+                  "permalink": "/r/madrid/comments/fx000/best_restaurants_in_madrid_that_aren't/comment/fx000c10/",
+                  "author": "fixture_user",
+                  "replies": ""
+                }
+              },
+              {
+                "kind": "t1",
+                "data": {
+                  "id": "fx000c11",
+                  "body": "StreetXO is an experience but it's loud as hell and not cheap. More of an event than a dinner.",
+                  "score": 164,
+                  "created_utc": 1786749869,
+                  "permalink": "/r/madrid/comments/fx000/best_restaurants_in_madrid_that_aren't/comment/fx000c11/",
+                  "author": "fixture_user",
+                  "replies": ""
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "thread": {
+        "id": "fx001",
+        "title": "Where to get good coffee in Madrid?",
+        "selftext": "Specialty coffee recommendations please. I work remotely and need somewhere I can sit with a laptop.",
+        "score": 1204,
+        "num_comments": 148,
+        "subreddit": "madrid",
+        "created_utc": 1787441069,
+        "permalink": "/r/madrid/comments/fx001/where_to_get_good_coffee_in/",
+        "upvote_ratio": 0.94,
+        "author": "fixture_user",
+        "over_18": false
+      },
+      "comments": [
+        {
+          "kind": "Listing",
+          "data": {
+            "children": [
+              {
+                "kind": "t3",
+                "data": {
+                  "id": "fx001",
+                  "title": "Where to get good coffee in Madrid?",
+                  "selftext": "Specialty coffee recommendations please. I work remotely and need somewhere I can sit with a laptop.",
+                  "score": 1204,
+                  "num_comments": 148,
+                  "subreddit": "madrid",
+                  "created_utc": 1787441069,
+                  "permalink": "/r/madrid/comments/fx001/where_to_get_good_coffee_in/",
+                  "upvote_ratio": 0.94,
+                  "author": "fixture_user",
+                  "over_18": false
+                }
+              }
+            ]
+          }
+        },
+        {
+          "kind": "Listing",
+          "data": {
+            "children": [
+              {
+                "kind": "t1",
+                "data": {
+                  "id": "fx001c00",
+                  "body": "Toma Cafe is the one that started it all. Tiny, no laptops though, it's a stand-at-the-counter place.",
+                  "score": 421,
+                  "created_utc": 1787441069,
+                  "permalink": "/r/madrid/comments/fx001/where_to_get_good_coffee_in/comment/fx001c00/",
+                  "author": "fixture_user",
+                  "replies": ""
+                }
+              },
+              {
+                "kind": "t1",
+                "data": {
+                  "id": "fx001c01",
+                  "body": "La Bicicleta Cafe on Plaza de San Ildefonso is exactly what you want. Laptop friendly, plenty of plugs, quiet in the mornings.",
+                  "score": 512,
+                  "created_utc": 1787441069,
+                  "permalink": "/r/madrid/comments/fx001/where_to_get_good_coffee_in/comment/fx001c01/",
+                  "author": "fixture_user",
+                  "replies": ""
+                }
+              },
+              {
+                "kind": "t1",
+                "data": {
+                  "id": "fx001c02",
+                  "body": "HanSo Cafe for the actual best espresso. Small counter, no frills, very good beans.",
+                  "score": 288,
+                  "created_utc": 1787527469,
+                  "permalink": "/r/madrid/comments/fx001/where_to_get_good_coffee_in/comment/fx001c02/",
+                  "author": "fixture_user",
+                  "replies": ""
+                }
+              },
+              {
+                "kind": "t1",
+                "data": {
+                  "id": "fx001c03",
+                  "body": "Federal Cafe has a lovely quiet terrace and does proper brunch. Good for a long solo morning.",
+                  "score": 244,
+                  "created_utc": 1787527469,
+                  "permalink": "/r/madrid/comments/fx001/where_to_get_good_coffee_in/comment/fx001c03/",
+                  "author": "fixture_user",
+                  "replies": ""
+                }
+              },
+              {
+                "kind": "t1",
+                "data": {
+                  "id": "fx001c04",
+                  "body": "Cafe de Oriente if you want the view of the palace more than the coffee. Calm, nice terrace, a bit pricey.",
+                  "score": 133,
+                  "created_utc": 1787613869,
+                  "permalink": "/r/madrid/comments/fx001/where_to_get_good_coffee_in/comment/fx001c04/",
+                  "author": "fixture_user",
+                  "replies": ""
+                }
+              },
+              {
+                "kind": "t1",
+                "data": {
+                  "id": "fx001c05",
+                  "body": "Chocolateria San Gines for churros at 3am. Not coffee exactly but a Madrid rite of passage.",
+                  "score": 198,
+                  "created_utc": 1787613869,
+                  "permalink": "/r/madrid/comments/fx001/where_to_get_good_coffee_in/comment/fx001c05/",
+                  "author": "fixture_user",
+                  "replies": ""
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "thread": {
+        "id": "fx002",
+        "title": "Madrid hidden gems - things tourists always miss",
+        "selftext": "",
+        "score": 1932,
+        "num_comments": 204,
+        "subreddit": "madrid",
+        "created_utc": 1784244269,
+        "permalink": "/r/madrid/comments/fx002/madrid_hidden_gems_-_things_tourists/",
+        "upvote_ratio": 0.94,
+        "author": "fixture_user",
+        "over_18": false
+      },
+      "comments": [
+        {
+          "kind": "Listing",
+          "data": {
+            "children": [
+              {
+                "kind": "t3",
+                "data": {
+                  "id": "fx002",
+                  "title": "Madrid hidden gems - things tourists always miss",
+                  "selftext": "",
+                  "score": 1932,
+                  "num_comments": 204,
+                  "subreddit": "madrid",
+                  "created_utc": 1784244269,
+                  "permalink": "/r/madrid/comments/fx002/madrid_hidden_gems_-_things_tourists/",
+                  "upvote_ratio": 0.94,
+                  "author": "fixture_user",
+                  "over_18": false
+                }
+              }
+            ]
+          }
+        },
+        {
+          "kind": "Listing",
+          "data": {
+            "children": [
+              {
+                "kind": "t1",
+                "data": {
+                  "id": "fx002c00",
+                  "body": "Parque de El Capricho. Only open weekends, almost nobody knows about it, the most peaceful garden in Madrid. Free entry.",
+                  "score": 743,
+                  "created_utc": 1784244269,
+                  "permalink": "/r/madrid/comments/fx002/madrid_hidden_gems_-_things_tourists/comment/fx002c00/",
+                  "author": "fixture_user",
+                  "replies": ""
+                }
+              },
+              {
+                "kind": "t1",
+                "data": {
+                  "id": "fx002c01",
+                  "body": "Templo de Debod at sunset. An actual Egyptian temple in the middle of Madrid. Free and stunning.",
+                  "score": 612,
+                  "created_utc": 1784330669,
+                  "permalink": "/r/madrid/comments/fx002/madrid_hidden_gems_-_things_tourists/comment/fx002c01/",
+                  "author": "fixture_user",
+                  "replies": ""
+                }
+              },
+              {
+                "kind": "t1",
+                "data": {
+                  "id": "fx002c02",
+                  "body": "Real Jardin Botanico right next to the Prado. Quiet, shaded, hardly anyone in it compared to Retiro.",
+                  "score": 389,
+                  "created_utc": 1784330669,
+                  "permalink": "/r/madrid/comments/fx002/madrid_hidden_gems_-_things_tourists/comment/fx002c02/",
+                  "author": "fixture_user",
+                  "replies": ""
+                }
+              },
+              {
+                "kind": "t1",
+                "data": {
+                  "id": "fx002c03",
+                  "body": "Matadero Madrid. Old slaughterhouse turned arts centre, always something on, and the neighbourhood is interesting.",
+                  "score": 301,
+                  "created_utc": 1784417069,
+                  "permalink": "/r/madrid/comments/fx002/madrid_hidden_gems_-_things_tourists/comment/fx002c03/",
+                  "author": "fixture_user",
+                  "replies": ""
+                }
+              },
+              {
+                "kind": "t1",
+                "data": {
+                  "id": "fx002c04",
+                  "body": "Mercado de la Paz is a real neighbourhood market, not a tourist one like San Miguel. Cheap and quiet midweek.",
+                  "score": 267,
+                  "created_utc": 1784503469,
+                  "permalink": "/r/madrid/comments/fx002/madrid_hidden_gems_-_things_tourists/comment/fx002c04/",
+                  "author": "fixture_user",
+                  "replies": ""
+                }
+              },
+              {
+                "kind": "t1",
+                "data": {
+                  "id": "fx002c05",
+                  "body": "La Venencia again. Genuinely unchanged for 90 years.",
+                  "score": 154,
+                  "created_utc": 1784503469,
+                  "permalink": "/r/madrid/comments/fx002/madrid_hidden_gems_-_things_tourists/comment/fx002c05/",
+                  "author": "fixture_user",
+                  "replies": ""
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "thread": {
+        "id": "fx003",
+        "title": "Is Mercado de San Miguel worth it?",
+        "selftext": "Everyone says it's a tourist trap but it looks nice in photos.",
+        "score": 687,
+        "num_comments": 96,
+        "subreddit": "madrid",
+        "created_utc": 1788218669,
+        "permalink": "/r/madrid/comments/fx003/is_mercado_de_san_miguel_worth/",
+        "upvote_ratio": 0.94,
+        "author": "fixture_user",
+        "over_18": false
+      },
+      "comments": [
+        {
+          "kind": "Listing",
+          "data": {
+            "children": [
+              {
+                "kind": "t3",
+                "data": {
+                  "id": "fx003",
+                  "title": "Is Mercado de San Miguel worth it?",
+                  "selftext": "Everyone says it's a tourist trap but it looks nice in photos.",
+                  "score": 687,
+                  "num_comments": 96,
+                  "subreddit": "madrid",
+                  "created_utc": 1788218669,
+                  "permalink": "/r/madrid/comments/fx003/is_mercado_de_san_miguel_worth/",
+                  "upvote_ratio": 0.94,
+                  "author": "fixture_user",
+                  "over_18": false
+                }
+              }
+            ]
+          }
+        },
+        {
+          "kind": "Listing",
+          "data": {
+            "children": [
+              {
+                "kind": "t1",
+                "data": {
+                  "id": "fx003c00",
+                  "body": "It's overpriced and rammed by 8pm. Go at 11am on a weekday if you want to actually enjoy it, otherwise skip it.",
+                  "score": 402,
+                  "created_utc": 1788218669,
+                  "permalink": "/r/madrid/comments/fx003/is_mercado_de_san_miguel_worth/comment/fx003c00/",
+                  "author": "fixture_user",
+                  "replies": ""
+                }
+              },
+              {
+                "kind": "t1",
+                "data": {
+                  "id": "fx003c01",
+                  "body": "Mercado de San Miguel is fine for one drink and a look at the building. Don't make it your dinner.",
+                  "score": 288,
+                  "created_utc": 1788218669,
+                  "permalink": "/r/madrid/comments/fx003/is_mercado_de_san_miguel_worth/comment/fx003c01/",
+                  "author": "fixture_user",
+                  "replies": ""
+                }
+              },
+              {
+                "kind": "t1",
+                "data": {
+                  "id": "fx003c02",
+                  "body": "If you want a market that locals use, go to Mercado de la Paz instead. Much better value.",
+                  "score": 221,
+                  "created_utc": 1788305069,
+                  "permalink": "/r/madrid/comments/fx003/is_mercado_de_san_miguel_worth/comment/fx003c02/",
+                  "author": "fixture_user",
+                  "replies": ""
+                }
+              },
+              {
+                "kind": "t1",
+                "data": {
+                  "id": "fx003c03",
+                  "body": "Honestly it's fun with kids because there's something for everyone, but yeah it's loud and expensive.",
+                  "score": 118,
+                  "created_utc": 1788305069,
+                  "permalink": "/r/madrid/comments/fx003/is_mercado_de_san_miguel_worth/comment/fx003c03/",
+                  "author": "fixture_user",
+                  "replies": ""
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "thread": {
+        "id": "fx004",
+        "title": "Best cocktail bars in Madrid?",
+        "selftext": "Looking for somewhere good for a night out, and also somewhere quieter for a conversation.",
+        "score": 943,
+        "num_comments": 87,
+        "subreddit": "madrid",
+        "created_utc": 1785367469,
+        "permalink": "/r/madrid/comments/fx004/best_cocktail_bars_in_madrid?/",
+        "upvote_ratio": 0.94,
+        "author": "fixture_user",
+        "over_18": false
+      },
+      "comments": [
+        {
+          "kind": "Listing",
+          "data": {
+            "children": [
+              {
+                "kind": "t3",
+                "data": {
+                  "id": "fx004",
+                  "title": "Best cocktail bars in Madrid?",
+                  "selftext": "Looking for somewhere good for a night out, and also somewhere quieter for a conversation.",
+                  "score": 943,
+                  "num_comments": 87,
+                  "subreddit": "madrid",
+                  "created_utc": 1785367469,
+                  "permalink": "/r/madrid/comments/fx004/best_cocktail_bars_in_madrid?/",
+                  "upvote_ratio": 0.94,
+                  "author": "fixture_user",
+                  "over_18": false
+                }
+              }
+            ]
+          }
+        },
+        {
+          "kind": "Listing",
+          "data": {
+            "children": [
+              {
+                "kind": "t1",
+                "data": {
+                  "id": "fx004c00",
+                  "body": "Salmon Guru is world class. Theatrical, packed, definitely a night out not a quiet drink. Get the Chipotle Chillon.",
+                  "score": 498,
+                  "created_utc": 1785367469,
+                  "permalink": "/r/madrid/comments/fx004/best_cocktail_bars_in_madrid?/comment/fx004c00/",
+                  "author": "fixture_user",
+                  "replies": ""
+                }
+              },
+              {
+                "kind": "t1",
+                "data": {
+                  "id": "fx004c01",
+                  "body": "1862 Dry Bar for the quiet option. Dark, downstairs is intimate, proper classic cocktails, easy to have a conversation.",
+                  "score": 421,
+                  "created_utc": 1785453869,
+                  "permalink": "/r/madrid/comments/fx004/best_cocktail_bars_in_madrid?/comment/fx004c01/",
+                  "author": "fixture_user",
+                  "replies": ""
+                }
+              },
+              {
+                "kind": "t1",
+                "data": {
+                  "id": "fx004c02",
+                  "body": "Angelita Madrid. Wine bar upstairs, cocktails downstairs, and the wine list is genuinely serious.",
+                  "score": 267,
+                  "created_utc": 1785453869,
+                  "permalink": "/r/madrid/comments/fx004/best_cocktail_bars_in_madrid?/comment/fx004c02/",
+                  "author": "fixture_user",
+                  "replies": ""
+                }
+              },
+              {
+                "kind": "t1",
+                "data": {
+                  "id": "fx004c03",
+                  "body": "Bodega de la Ardosa for vermouth instead. Narrow tiled tavern from 1892, cheap, standing room only, full of locals.",
+                  "score": 312,
+                  "created_utc": 1785540269,
+                  "permalink": "/r/madrid/comments/fx004/best_cocktail_bars_in_madrid?/comment/fx004c03/",
+                  "author": "fixture_user",
+                  "replies": ""
+                }
+              },
+              {
+                "kind": "t1",
+                "data": {
+                  "id": "fx004c04",
+                  "body": "Teatro Barcelo if you actually want to dance until 6am. Very young crowd, very loud, drinks are overpriced.",
+                  "score": 143,
+                  "created_utc": 1785540269,
+                  "permalink": "/r/madrid/comments/fx004/best_cocktail_bars_in_madrid?/comment/fx004c04/",
+                  "author": "fixture_user",
+                  "replies": ""
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "thread": {
+        "id": "fx005",
+        "title": "Things to do in Madrid with kids",
+        "selftext": "Travelling with a 7 and 10 year old in June.",
+        "score": 512,
+        "num_comments": 73,
+        "subreddit": "askspain",
+        "created_utc": 1781479469,
+        "permalink": "/r/askspain/comments/fx005/things_to_do_in_madrid_with/",
+        "upvote_ratio": 0.94,
+        "author": "fixture_user",
+        "over_18": false
+      },
+      "comments": [
+        {
+          "kind": "Listing",
+          "data": {
+            "children": [
+              {
+                "kind": "t3",
+                "data": {
+                  "id": "fx005",
+                  "title": "Things to do in Madrid with kids",
+                  "selftext": "Travelling with a 7 and 10 year old in June.",
+                  "score": 512,
+                  "num_comments": 73,
+                  "subreddit": "askspain",
+                  "created_utc": 1781479469,
+                  "permalink": "/r/askspain/comments/fx005/things_to_do_in_madrid_with/",
+                  "upvote_ratio": 0.94,
+                  "author": "fixture_user",
+                  "over_18": false
+                }
+              }
+            ]
+          }
+        },
+        {
+          "kind": "Listing",
+          "data": {
+            "children": [
+              {
+                "kind": "t1",
+                "data": {
+                  "id": "fx005c00",
+                  "body": "Retiro Park, rent a rowboat on the lake. Cheap and my kids talked about it for weeks. Great family afternoon.",
+                  "score": 334,
+                  "created_utc": 1781479469,
+                  "permalink": "/r/askspain/comments/fx005/things_to_do_in_madrid_with/comment/fx005c00/",
+                  "author": "fixture_user",
+                  "replies": ""
+                }
+              },
+              {
+                "kind": "t1",
+                "data": {
+                  "id": "fx005c01",
+                  "body": "Parque de El Retiro is the obvious one but it's obvious because it works.",
+                  "score": 121,
+                  "created_utc": 1781565869,
+                  "permalink": "/r/askspain/comments/fx005/things_to_do_in_madrid_with/comment/fx005c01/",
+                  "author": "fixture_user",
+                  "replies": ""
+                }
+              },
+              {
+                "kind": "t1",
+                "data": {
+                  "id": "fx005c02",
+                  "body": "Estadio Santiago Bernabeu tour if either of them likes football. It's expensive but they loved it.",
+                  "score": 208,
+                  "created_utc": 1781565869,
+                  "permalink": "/r/askspain/comments/fx005/things_to_do_in_madrid_with/comment/fx005c02/",
+                  "author": "fixture_user",
+                  "replies": ""
+                }
+              },
+              {
+                "kind": "t1",
+                "data": {
+                  "id": "fx005c03",
+                  "body": "Museo del Prado is a hard sell for a 7 year old. We lasted about an hour.",
+                  "score": 156,
+                  "created_utc": 1781652269,
+                  "permalink": "/r/askspain/comments/fx005/things_to_do_in_madrid_with/comment/fx005c03/",
+                  "author": "fixture_user",
+                  "replies": ""
+                }
+              },
+              {
+                "kind": "t1",
+                "data": {
+                  "id": "fx005c04",
+                  "body": "Chocolateria San Gines. Churros and chocolate, instant win with kids.",
+                  "score": 187,
+                  "created_utc": 1781652269,
+                  "permalink": "/r/askspain/comments/fx005/things_to_do_in_madrid_with/comment/fx005c04/",
+                  "author": "fixture_user",
+                  "replies": ""
+                }
+              },
+              {
+                "kind": "t1",
+                "data": {
+                  "id": "fx005c05",
+                  "body": "Real Jardin Botanico is good for letting them run around somewhere quiet and shaded.",
+                  "score": 94,
+                  "created_utc": 1781738669,
+                  "permalink": "/r/askspain/comments/fx005/things_to_do_in_madrid_with/comment/fx005c05/",
+                  "author": "fixture_user",
+                  "replies": ""
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "thread": {
+        "id": "fx006",
+        "title": "Prado vs Reina Sofia vs Thyssen - which one if I only have time for one?",
+        "selftext": "Two days in Madrid, museum fatigue is real.",
+        "score": 1156,
+        "num_comments": 134,
+        "subreddit": "travel",
+        "created_utc": 1783466669,
+        "permalink": "/r/travel/comments/fx006/prado_vs_reina_sofia_vs_thyssen/",
+        "upvote_ratio": 0.94,
+        "author": "fixture_user",
+        "over_18": false
+      },
+      "comments": [
+        {
+          "kind": "Listing",
+          "data": {
+            "children": [
+              {
+                "kind": "t3",
+                "data": {
+                  "id": "fx006",
+                  "title": "Prado vs Reina Sofia vs Thyssen - which one if I only have time for one?",
+                  "selftext": "Two days in Madrid, museum fatigue is real.",
+                  "score": 1156,
+                  "num_comments": 134,
+                  "subreddit": "travel",
+                  "created_utc": 1783466669,
+                  "permalink": "/r/travel/comments/fx006/prado_vs_reina_sofia_vs_thyssen/",
+                  "upvote_ratio": 0.94,
+                  "author": "fixture_user",
+                  "over_18": false
+                }
+              }
+            ]
+          }
+        },
+        {
+          "kind": "Listing",
+          "data": {
+            "children": [
+              {
+                "kind": "t1",
+                "data": {
+                  "id": "fx006c00",
+                  "body": "Museo del Prado if you want the big classical hitters. Overwhelming in the best way, give it three hours minimum.",
+                  "score": 587,
+                  "created_utc": 1783466669,
+                  "permalink": "/r/travel/comments/fx006/prado_vs_reina_sofia_vs_thyssen/comment/fx006c00/",
+                  "author": "fixture_user",
+                  "replies": ""
+                }
+              },
+              {
+                "kind": "t1",
+                "data": {
+                  "id": "fx006c01",
+                  "body": "Reina Sofia for Guernica alone. Much calmer than the Prado and easier to do in 90 minutes. Quiet on a weekday morning.",
+                  "score": 512,
+                  "created_utc": 1783553069,
+                  "permalink": "/r/travel/comments/fx006/prado_vs_reina_sofia_vs_thyssen/comment/fx006c01/",
+                  "author": "fixture_user",
+                  "replies": ""
+                }
+              },
+              {
+                "kind": "t1",
+                "data": {
+                  "id": "fx006c02",
+                  "body": "Museo Nacional Thyssen-Bornemisza is the underrated one. Best single overview of Western art anywhere and never crowded.",
+                  "score": 398,
+                  "created_utc": 1783553069,
+                  "permalink": "/r/travel/comments/fx006/prado_vs_reina_sofia_vs_thyssen/comment/fx006c02/",
+                  "author": "fixture_user",
+                  "replies": ""
+                }
+              },
+              {
+                "kind": "t1",
+                "data": {
+                  "id": "fx006c03",
+                  "body": "Prado is free the last two hours but the queue is brutal. Worth it if you're on a budget.",
+                  "score": 233,
+                  "created_utc": 1783639469,
+                  "permalink": "/r/travel/comments/fx006/prado_vs_reina_sofia_vs_thyssen/comment/fx006c03/",
+                  "author": "fixture_user",
+                  "replies": ""
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

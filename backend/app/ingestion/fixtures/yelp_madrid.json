@@ -1,0 +1,2373 @@
+{
+  "_fixture_note": "Recorded-shape Yelp Fusion v3 /businesses/search response, with `hours` and `reviews` keys merged in as the adapter's detail-enrichment step would. Name variants ('Botín' vs Google's 'Sobrino de Botín', 'Mercado San Miguel' vs 'Mercado de San Miguel') and 20-80m coordinate jitter are deliberate: this is the data that exercises entity resolution.",
+  "businesses": [
+    {
+      "id": "yelp-fixture-00-botín",
+      "alias": "botín-madrid",
+      "name": "Botín",
+      "url": "https://www.yelp.com/biz/botín-madrid",
+      "review_count": 612,
+      "rating": 4.0,
+      "coordinates": {
+        "latitude": 40.41431,
+        "longitude": -3.70873
+      },
+      "categories": [
+        {
+          "alias": "spanish",
+          "title": "Spanish"
+        },
+        {
+          "alias": "tapas",
+          "title": "Tapas"
+        }
+      ],
+      "location": {
+        "address1": "",
+        "city": "Madrid",
+        "country": "ES",
+        "display_address": [
+          "Madrid, Spain"
+        ]
+      },
+      "is_closed": false,
+      "reviews": [
+        {
+          "text": "Touristy for sure, but the cochinillo is the real thing. Book weeks ahead or you will not get in.",
+          "url": "https://www.yelp.com/biz/botín-madrid?hrid=r0",
+          "rating": 4
+        },
+        {
+          "text": "Cramped and loud downstairs, charming upstairs. Service was warm even though we barely spoke Spanish.",
+          "url": "https://www.yelp.com/biz/botín-madrid?hrid=r1",
+          "rating": 4
+        }
+      ],
+      "price": "€€€",
+      "hours": [
+        {
+          "hours_type": "REGULAR",
+          "is_open_now": true,
+          "open": [
+            {
+              "day": 0,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 1,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 2,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 3,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 4,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 5,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 6,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 0,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 1,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 2,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 3,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 4,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 5,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 6,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "yelp-fixture-01-casa-lucio",
+      "alias": "casa-lucio-madrid",
+      "name": "Casa Lucio",
+      "url": "https://www.yelp.com/biz/casa-lucio-madrid",
+      "review_count": 388,
+      "rating": 4.0,
+      "coordinates": {
+        "latitude": 40.41139,
+        "longitude": -3.70985
+      },
+      "categories": [
+        {
+          "alias": "spanish",
+          "title": "Spanish"
+        }
+      ],
+      "location": {
+        "address1": "",
+        "city": "Madrid",
+        "country": "ES",
+        "display_address": [
+          "Madrid, Spain"
+        ]
+      },
+      "is_closed": false,
+      "reviews": [
+        {
+          "text": "Huevos rotos are exactly as good as everyone says. Go for lunch, it is quieter.",
+          "url": "https://www.yelp.com/biz/casa-lucio-madrid?hrid=r0",
+          "rating": 4
+        },
+        {
+          "text": "Great for a group. We were six and they squeezed us in without fuss.",
+          "url": "https://www.yelp.com/biz/casa-lucio-madrid?hrid=r1",
+          "rating": 4
+        }
+      ],
+      "price": "€€€",
+      "hours": [
+        {
+          "hours_type": "REGULAR",
+          "is_open_now": true,
+          "open": [
+            {
+              "day": 0,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 1,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 2,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 3,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 4,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 5,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 6,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 0,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 1,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 2,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 3,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 4,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 5,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 6,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "yelp-fixture-02-mercado-san-miguel",
+      "alias": "mercado-san-miguel-madrid",
+      "name": "Mercado San Miguel",
+      "url": "https://www.yelp.com/biz/mercado-san-miguel-madrid",
+      "review_count": 1204,
+      "rating": 3.5,
+      "coordinates": {
+        "latitude": 40.41541,
+        "longitude": -3.70884
+      },
+      "categories": [
+        {
+          "alias": "food_court",
+          "title": "Food Court"
+        },
+        {
+          "alias": "tapas",
+          "title": "Tapas"
+        },
+        {
+          "alias": "markets",
+          "title": "Markets"
+        }
+      ],
+      "location": {
+        "address1": "",
+        "city": "Madrid",
+        "country": "ES",
+        "display_address": [
+          "Madrid, Spain"
+        ]
+      },
+      "is_closed": false,
+      "reviews": [
+        {
+          "text": "Lively but insanely crowded by 8pm. Come early if you want a seat.",
+          "url": "https://www.yelp.com/biz/mercado-san-miguel-madrid?hrid=r0",
+          "rating": 4
+        },
+        {
+          "text": "Expensive for what it is, but the variety is fun with kids who cannot agree on anything.",
+          "url": "https://www.yelp.com/biz/mercado-san-miguel-madrid?hrid=r1",
+          "rating": 4
+        },
+        {
+          "text": "Standing room only on a Saturday night. Loud, fun, not a place for a quiet dinner.",
+          "url": "https://www.yelp.com/biz/mercado-san-miguel-madrid?hrid=r2",
+          "rating": 4
+        }
+      ],
+      "price": "€€",
+      "hours": [
+        {
+          "hours_type": "REGULAR",
+          "is_open_now": true,
+          "open": [
+            {
+              "day": 0,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 1,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 2,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 3,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 4,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 5,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 6,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 0,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 1,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 2,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 3,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 4,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 5,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 6,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "yelp-fixture-03-cafe-de-oriente",
+      "alias": "cafe-de-oriente-madrid",
+      "name": "Cafe de Oriente",
+      "url": "https://www.yelp.com/biz/cafe-de-oriente-madrid",
+      "review_count": 231,
+      "rating": 4.0,
+      "coordinates": {
+        "latitude": 40.41836,
+        "longitude": -3.71255
+      },
+      "categories": [
+        {
+          "alias": "cafes",
+          "title": "Cafes"
+        },
+        {
+          "alias": "breakfast_brunch",
+          "title": "Breakfast Brunch"
+        }
+      ],
+      "location": {
+        "address1": "",
+        "city": "Madrid",
+        "country": "ES",
+        "display_address": [
+          "Madrid, Spain"
+        ]
+      },
+      "is_closed": false,
+      "reviews": [
+        {
+          "text": "Quiet terrace with a view of the palace. Perfect spot to read for an hour.",
+          "url": "https://www.yelp.com/biz/cafe-de-oriente-madrid?hrid=r0",
+          "rating": 4
+        },
+        {
+          "text": "Coffee is fine, the setting is the point. Very calm in the morning.",
+          "url": "https://www.yelp.com/biz/cafe-de-oriente-madrid?hrid=r1",
+          "rating": 4
+        }
+      ],
+      "price": "€€",
+      "hours": [
+        {
+          "hours_type": "REGULAR",
+          "is_open_now": true,
+          "open": [
+            {
+              "day": 0,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 1,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 2,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 3,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 4,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 5,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 6,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 0,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 1,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 2,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 3,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 4,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 5,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 6,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "yelp-fixture-04-toma-cafe",
+      "alias": "toma-cafe-madrid",
+      "name": "Toma Cafe",
+      "url": "https://www.yelp.com/biz/toma-cafe-madrid",
+      "review_count": 176,
+      "rating": 4.5,
+      "coordinates": {
+        "latitude": 40.42779,
+        "longitude": -3.70632
+      },
+      "categories": [
+        {
+          "alias": "coffee",
+          "title": "Coffee"
+        }
+      ],
+      "location": {
+        "address1": "",
+        "city": "Madrid",
+        "country": "ES",
+        "display_address": [
+          "Madrid, Spain"
+        ]
+      },
+      "is_closed": false,
+      "reviews": [
+        {
+          "text": "Best flat white in Malasaña. Tiny, no laptops, in and out.",
+          "url": "https://www.yelp.com/biz/toma-cafe-madrid?hrid=r0",
+          "rating": 4
+        },
+        {
+          "text": "Standing at the counter with a cortado is the move. Friendly baristas.",
+          "url": "https://www.yelp.com/biz/toma-cafe-madrid?hrid=r1",
+          "rating": 4
+        }
+      ],
+      "price": "€",
+      "hours": [
+        {
+          "hours_type": "REGULAR",
+          "is_open_now": true,
+          "open": [
+            {
+              "day": 0,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 1,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 2,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 3,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 4,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 5,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 6,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 0,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 1,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 2,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 3,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 4,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 5,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 6,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "yelp-fixture-05-la-bicicleta-cafe---",
+      "alias": "la-bicicleta-cafe---workspace-madrid",
+      "name": "La Bicicleta Cafe & Workspace",
+      "url": "https://www.yelp.com/biz/la-bicicleta-cafe---workspace-madrid",
+      "review_count": 204,
+      "rating": 4.0,
+      "coordinates": {
+        "latitude": 40.42661,
+        "longitude": -3.70487
+      },
+      "categories": [
+        {
+          "alias": "coffee",
+          "title": "Coffee"
+        },
+        {
+          "alias": "cafes",
+          "title": "Cafes"
+        }
+      ],
+      "location": {
+        "address1": "",
+        "city": "Madrid",
+        "country": "ES",
+        "display_address": [
+          "Madrid, Spain"
+        ]
+      },
+      "is_closed": false,
+      "reviews": [
+        {
+          "text": "Laptop friendly and plenty of plugs. I worked here solo for three hours and nobody minded.",
+          "url": "https://www.yelp.com/biz/la-bicicleta-cafe---workspace-madrid?hrid=r0",
+          "rating": 4
+        },
+        {
+          "text": "Quiet in the mornings, gets lively after 6pm. Good wifi.",
+          "url": "https://www.yelp.com/biz/la-bicicleta-cafe---workspace-madrid?hrid=r1",
+          "rating": 4
+        }
+      ],
+      "price": "€",
+      "hours": [
+        {
+          "hours_type": "REGULAR",
+          "is_open_now": true,
+          "open": [
+            {
+              "day": 0,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 1,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 2,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 3,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 4,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 5,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 6,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 0,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 1,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 2,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 3,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 4,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 5,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 6,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "yelp-fixture-06-salmon-guru",
+      "alias": "salmon-guru-madrid",
+      "name": "Salmon Guru",
+      "url": "https://www.yelp.com/biz/salmon-guru-madrid",
+      "review_count": 289,
+      "rating": 4.5,
+      "coordinates": {
+        "latitude": 40.41427,
+        "longitude": -3.69944
+      },
+      "categories": [
+        {
+          "alias": "cocktailbars",
+          "title": "Cocktailbars"
+        }
+      ],
+      "location": {
+        "address1": "",
+        "city": "Madrid",
+        "country": "ES",
+        "display_address": [
+          "Madrid, Spain"
+        ]
+      },
+      "is_closed": false,
+      "reviews": [
+        {
+          "text": "One of the best cocktail bars anywhere. Get the Chipotle Chillón.",
+          "url": "https://www.yelp.com/biz/salmon-guru-madrid?hrid=r0",
+          "rating": 4
+        },
+        {
+          "text": "Tiny and packed, expect to wait. Worth it. Definitely a night out, not a quiet drink.",
+          "url": "https://www.yelp.com/biz/salmon-guru-madrid?hrid=r1",
+          "rating": 4
+        }
+      ],
+      "price": "€€€",
+      "hours": [
+        {
+          "hours_type": "REGULAR",
+          "is_open_now": true,
+          "open": [
+            {
+              "day": 0,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 1,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 2,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 3,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 4,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 5,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 6,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 0,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 1,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 2,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 3,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 4,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 5,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 6,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "yelp-fixture-07-bodega-de-la-ardosa",
+      "alias": "bodega-de-la-ardosa-madrid",
+      "name": "Bodega de la Ardosa",
+      "url": "https://www.yelp.com/biz/bodega-de-la-ardosa-madrid",
+      "review_count": 341,
+      "rating": 4.5,
+      "coordinates": {
+        "latitude": 40.42374,
+        "longitude": -3.70163
+      },
+      "categories": [
+        {
+          "alias": "bars",
+          "title": "Bars"
+        },
+        {
+          "alias": "tapas",
+          "title": "Tapas"
+        }
+      ],
+      "location": {
+        "address1": "",
+        "city": "Madrid",
+        "country": "ES",
+        "display_address": [
+          "Madrid, Spain"
+        ]
+      },
+      "is_closed": false,
+      "reviews": [
+        {
+          "text": "Cheap vermouth, great tortilla, standing room only. Classic Madrid.",
+          "url": "https://www.yelp.com/biz/bodega-de-la-ardosa-madrid?hrid=r0",
+          "rating": 4
+        },
+        {
+          "text": "Squeeze in at the bar. Budget friendly and full of locals.",
+          "url": "https://www.yelp.com/biz/bodega-de-la-ardosa-madrid?hrid=r1",
+          "rating": 4
+        }
+      ],
+      "price": "€",
+      "hours": [
+        {
+          "hours_type": "REGULAR",
+          "is_open_now": true,
+          "open": [
+            {
+              "day": 0,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 1,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 2,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 3,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 4,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 5,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 6,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 0,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 1,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 2,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 3,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 4,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 5,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 6,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "yelp-fixture-08-streetxo-madrid",
+      "alias": "streetxo-madrid-madrid",
+      "name": "StreetXO Madrid",
+      "url": "https://www.yelp.com/biz/streetxo-madrid-madrid",
+      "review_count": 198,
+      "rating": 4.0,
+      "coordinates": {
+        "latitude": 40.42591,
+        "longitude": -3.68884
+      },
+      "categories": [
+        {
+          "alias": "asianfusion",
+          "title": "Asianfusion"
+        },
+        {
+          "alias": "tapas",
+          "title": "Tapas"
+        }
+      ],
+      "location": {
+        "address1": "",
+        "city": "Madrid",
+        "country": "ES",
+        "display_address": [
+          "Madrid, Spain"
+        ]
+      },
+      "is_closed": false,
+      "reviews": [
+        {
+          "text": "Wild flavours, deafening music. Not a romantic dinner, more of an event.",
+          "url": "https://www.yelp.com/biz/streetxo-madrid-madrid?hrid=r0",
+          "rating": 4
+        },
+        {
+          "text": "Pricey for small plates but genuinely unlike anything else.",
+          "url": "https://www.yelp.com/biz/streetxo-madrid-madrid?hrid=r1",
+          "rating": 4
+        }
+      ],
+      "price": "€€€€",
+      "hours": [
+        {
+          "hours_type": "REGULAR",
+          "is_open_now": true,
+          "open": [
+            {
+              "day": 0,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 1,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 2,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 3,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 4,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 5,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 6,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 0,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 1,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 2,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 3,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 4,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 5,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 6,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "yelp-fixture-09-taberna-la-bola",
+      "alias": "taberna-la-bola-madrid",
+      "name": "Taberna La Bola",
+      "url": "https://www.yelp.com/biz/taberna-la-bola-madrid",
+      "review_count": 254,
+      "rating": 4.0,
+      "coordinates": {
+        "latitude": 40.41921,
+        "longitude": -3.71191
+      },
+      "categories": [
+        {
+          "alias": "spanish",
+          "title": "Spanish"
+        }
+      ],
+      "location": {
+        "address1": "",
+        "city": "Madrid",
+        "country": "ES",
+        "display_address": [
+          "Madrid, Spain"
+        ]
+      },
+      "is_closed": false,
+      "reviews": [
+        {
+          "text": "Cocido is a two hour commitment and worth every minute. Family run, very traditional.",
+          "url": "https://www.yelp.com/biz/taberna-la-bola-madrid?hrid=r0",
+          "rating": 4
+        },
+        {
+          "text": "Cash only when we went. Small dining room, quiet, no music.",
+          "url": "https://www.yelp.com/biz/taberna-la-bola-madrid?hrid=r1",
+          "rating": 4
+        }
+      ],
+      "price": "€€",
+      "hours": [
+        {
+          "hours_type": "REGULAR",
+          "is_open_now": true,
+          "open": [
+            {
+              "day": 0,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 1,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 2,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 3,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 4,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 5,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 6,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 0,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 1,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 2,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 3,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 4,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 5,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 6,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "yelp-fixture-10-museo-del-prado",
+      "alias": "museo-del-prado-madrid",
+      "name": "Museo del Prado",
+      "url": "https://www.yelp.com/biz/museo-del-prado-madrid",
+      "review_count": 842,
+      "rating": 5.0,
+      "coordinates": {
+        "latitude": 40.41372,
+        "longitude": -3.69229
+      },
+      "categories": [
+        {
+          "alias": "museums",
+          "title": "Museums"
+        }
+      ],
+      "location": {
+        "address1": "",
+        "city": "Madrid",
+        "country": "ES",
+        "display_address": [
+          "Madrid, Spain"
+        ]
+      },
+      "is_closed": false,
+      "reviews": [
+        {
+          "text": "Overwhelming in the best way. Give it three hours minimum.",
+          "url": "https://www.yelp.com/biz/museo-del-prado-madrid?hrid=r0",
+          "rating": 5
+        },
+        {
+          "text": "Free entry in the last two hours but the queue is long. Kids got bored after an hour.",
+          "url": "https://www.yelp.com/biz/museo-del-prado-madrid?hrid=r1",
+          "rating": 5
+        }
+      ],
+      "hours": [
+        {
+          "hours_type": "REGULAR",
+          "is_open_now": true,
+          "open": [
+            {
+              "day": 0,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 1,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 2,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 3,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 4,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 5,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 6,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 0,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 1,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 2,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 3,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 4,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 5,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 6,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "yelp-fixture-11-reina-sofia-museum",
+      "alias": "reina-sofia-museum-madrid",
+      "name": "Reina Sofia Museum",
+      "url": "https://www.yelp.com/biz/reina-sofia-museum-madrid",
+      "review_count": 498,
+      "rating": 4.5,
+      "coordinates": {
+        "latitude": 40.40801,
+        "longitude": -3.69442
+      },
+      "categories": [
+        {
+          "alias": "museums",
+          "title": "Museums"
+        }
+      ],
+      "location": {
+        "address1": "",
+        "city": "Madrid",
+        "country": "ES",
+        "display_address": [
+          "Madrid, Spain"
+        ]
+      },
+      "is_closed": false,
+      "reviews": [
+        {
+          "text": "Guernica alone justifies the ticket. Much calmer than the Prado.",
+          "url": "https://www.yelp.com/biz/reina-sofia-museum-madrid?hrid=r0",
+          "rating": 4
+        },
+        {
+          "text": "Quiet on a weekday morning. Good for a solo visit.",
+          "url": "https://www.yelp.com/biz/reina-sofia-museum-madrid?hrid=r1",
+          "rating": 4
+        }
+      ],
+      "hours": [
+        {
+          "hours_type": "REGULAR",
+          "is_open_now": true,
+          "open": [
+            {
+              "day": 0,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 1,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 2,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 3,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 4,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 5,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 6,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 0,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 1,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 2,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 3,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 4,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 5,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 6,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "yelp-fixture-12-retiro-park",
+      "alias": "retiro-park-madrid",
+      "name": "Retiro Park",
+      "url": "https://www.yelp.com/biz/retiro-park-madrid",
+      "review_count": 721,
+      "rating": 5.0,
+      "coordinates": {
+        "latitude": 40.41522,
+        "longitude": -3.68451
+      },
+      "categories": [
+        {
+          "alias": "parks",
+          "title": "Parks"
+        }
+      ],
+      "location": {
+        "address1": "",
+        "city": "Madrid",
+        "country": "ES",
+        "display_address": [
+          "Madrid, Spain"
+        ]
+      },
+      "is_closed": false,
+      "reviews": [
+        {
+          "text": "Rent a rowboat, it is cheap and the kids loved it. Great family afternoon.",
+          "url": "https://www.yelp.com/biz/retiro-park-madrid?hrid=r0",
+          "rating": 5
+        },
+        {
+          "text": "Huge and calm once you get away from the lake. Free.",
+          "url": "https://www.yelp.com/biz/retiro-park-madrid?hrid=r1",
+          "rating": 5
+        }
+      ],
+      "hours": [
+        {
+          "hours_type": "REGULAR",
+          "is_open_now": true,
+          "open": [
+            {
+              "day": 0,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 1,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 2,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 3,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 4,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 5,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 6,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 0,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 1,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 2,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 3,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 4,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 5,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 6,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "yelp-fixture-13-teatro-barcelo",
+      "alias": "teatro-barcelo-madrid",
+      "name": "Teatro Barcelo",
+      "url": "https://www.yelp.com/biz/teatro-barcelo-madrid",
+      "review_count": 164,
+      "rating": 3.0,
+      "coordinates": {
+        "latitude": 40.42551,
+        "longitude": -3.69831
+      },
+      "categories": [
+        {
+          "alias": "danceclubs",
+          "title": "Danceclubs"
+        },
+        {
+          "alias": "nightlife",
+          "title": "Nightlife"
+        }
+      ],
+      "location": {
+        "address1": "",
+        "city": "Madrid",
+        "country": "ES",
+        "display_address": [
+          "Madrid, Spain"
+        ]
+      },
+      "is_closed": false,
+      "reviews": [
+        {
+          "text": "Fun if you want to dance until 6am. Very young crowd, very loud.",
+          "url": "https://www.yelp.com/biz/teatro-barcelo-madrid?hrid=r0",
+          "rating": 3
+        },
+        {
+          "text": "Drinks are overpriced and the queue was 40 minutes. Nightlife, not a bar.",
+          "url": "https://www.yelp.com/biz/teatro-barcelo-madrid?hrid=r1",
+          "rating": 3
+        }
+      ],
+      "price": "€€€",
+      "hours": [
+        {
+          "hours_type": "REGULAR",
+          "is_open_now": true,
+          "open": [
+            {
+              "day": 0,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 1,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 2,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 3,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 4,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 5,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 6,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 0,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 1,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 2,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 3,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 4,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 5,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 6,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "yelp-fixture-14-1862-dry-bar",
+      "alias": "1862-dry-bar-madrid",
+      "name": "1862 Dry Bar",
+      "url": "https://www.yelp.com/biz/1862-dry-bar-madrid",
+      "review_count": 152,
+      "rating": 4.5,
+      "coordinates": {
+        "latitude": 40.42568,
+        "longitude": -3.71021
+      },
+      "categories": [
+        {
+          "alias": "cocktailbars",
+          "title": "Cocktailbars"
+        }
+      ],
+      "location": {
+        "address1": "",
+        "city": "Madrid",
+        "country": "ES",
+        "display_address": [
+          "Madrid, Spain"
+        ]
+      },
+      "is_closed": false,
+      "reviews": [
+        {
+          "text": "Dark, quiet, proper classic cocktails. Great for a conversation.",
+          "url": "https://www.yelp.com/biz/1862-dry-bar-madrid?hrid=r0",
+          "rating": 4
+        },
+        {
+          "text": "Downstairs is intimate. Easily the most relaxed cocktail bar in Malasaña.",
+          "url": "https://www.yelp.com/biz/1862-dry-bar-madrid?hrid=r1",
+          "rating": 4
+        }
+      ],
+      "price": "€€",
+      "hours": [
+        {
+          "hours_type": "REGULAR",
+          "is_open_now": true,
+          "open": [
+            {
+              "day": 0,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 1,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 2,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 3,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 4,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 5,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 6,
+              "start": "1300",
+              "end": "1600",
+              "is_overnight": false
+            },
+            {
+              "day": 0,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 1,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 2,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 3,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 4,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 5,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            },
+            {
+              "day": 6,
+              "start": "2000",
+              "end": "2330",
+              "is_overnight": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "yelp-fixture-15-casa-julio",
+      "alias": "casa-julio-madrid",
+      "name": "Casa Julio",
+      "url": "https://www.yelp.com/biz/casa-julio-madrid",
+      "review_count": 187,
+      "rating": 4.5,
+      "coordinates": {
+        "latitude": 40.42419,
+        "longitude": -3.70353
+      },
+      "categories": [
+        {
+          "alias": "tapas",
+          "title": "Tapas"
+        },
+        {
+          "alias": "spanish",
+          "title": "Spanish"
+        }
+      ],
+      "location": {
+        "address1": "",
+        "city": "Madrid",
+        "country": "ES",
+        "display_address": [
+          "Madrid, Spain"
+        ]
+      },
+      "is_closed": false,
+      "reviews": [
+        {
+          "text": "Croquetas only, and that is all they need. Cheap, tiny, always packed.",
+          "url": "https://www.yelp.com/biz/casa-julio-madrid?hrid=r0",
+          "rating": 4
+        },
+        {
+          "text": "Standing on the street with a plate of croquetas and a beer. Budget perfection.",
+          "url": "https://www.yelp.com/biz/casa-julio-madrid?hrid=r1",
+          "rating": 4
+        }
+      ],
+      "price": "€"
+    },
+    {
+      "id": "yelp-fixture-16-el-tigre",
+      "alias": "el-tigre-madrid",
+      "name": "El Tigre",
+      "url": "https://www.yelp.com/biz/el-tigre-madrid",
+      "review_count": 412,
+      "rating": 4.0,
+      "coordinates": {
+        "latitude": 40.42121,
+        "longitude": -3.69649
+      },
+      "categories": [
+        {
+          "alias": "bars",
+          "title": "Bars"
+        },
+        {
+          "alias": "tapas",
+          "title": "Tapas"
+        }
+      ],
+      "location": {
+        "address1": "",
+        "city": "Madrid",
+        "country": "ES",
+        "display_address": [
+          "Madrid, Spain"
+        ]
+      },
+      "is_closed": false,
+      "reviews": [
+        {
+          "text": "Order a drink, get a mountain of free tapas. Absurd value, absolutely chaotic.",
+          "url": "https://www.yelp.com/biz/el-tigre-madrid?hrid=r0",
+          "rating": 4
+        },
+        {
+          "text": "Loud, cramped, cheap. Great for a group of students, terrible for a date.",
+          "url": "https://www.yelp.com/biz/el-tigre-madrid?hrid=r1",
+          "rating": 4
+        }
+      ],
+      "price": "€"
+    },
+    {
+      "id": "yelp-fixture-17-chocolatería-san-gin",
+      "alias": "chocolatería-san-ginés-madrid",
+      "name": "Chocolatería San Ginés",
+      "url": "https://www.yelp.com/biz/chocolatería-san-ginés-madrid",
+      "review_count": 689,
+      "rating": 4.0,
+      "coordinates": {
+        "latitude": 40.4168,
+        "longitude": -3.70578
+      },
+      "categories": [
+        {
+          "alias": "desserts",
+          "title": "Desserts"
+        },
+        {
+          "alias": "cafes",
+          "title": "Cafes"
+        }
+      ],
+      "location": {
+        "address1": "",
+        "city": "Madrid",
+        "country": "ES",
+        "display_address": [
+          "Madrid, Spain"
+        ]
+      },
+      "is_closed": false,
+      "reviews": [
+        {
+          "text": "Churros con chocolate at 2am after a night out is a Madrid rite of passage.",
+          "url": "https://www.yelp.com/biz/chocolatería-san-ginés-madrid?hrid=r0",
+          "rating": 4
+        },
+        {
+          "text": "Touristy but genuinely good. Open nearly all night. Kids love it.",
+          "url": "https://www.yelp.com/biz/chocolatería-san-ginés-madrid?hrid=r1",
+          "rating": 4
+        }
+      ],
+      "price": "€"
+    },
+    {
+      "id": "yelp-fixture-18-mercado-de-la-paz",
+      "alias": "mercado-de-la-paz-madrid",
+      "name": "Mercado de la Paz",
+      "url": "https://www.yelp.com/biz/mercado-de-la-paz-madrid",
+      "review_count": 143,
+      "rating": 4.5,
+      "coordinates": {
+        "latitude": 40.42711,
+        "longitude": -3.68372
+      },
+      "categories": [
+        {
+          "alias": "markets",
+          "title": "Markets"
+        },
+        {
+          "alias": "food_court",
+          "title": "Food Court"
+        }
+      ],
+      "location": {
+        "address1": "",
+        "city": "Madrid",
+        "country": "ES",
+        "display_address": [
+          "Madrid, Spain"
+        ]
+      },
+      "is_closed": false,
+      "reviews": [
+        {
+          "text": "Casa Dani's tortilla is the reason to come. Get there before the lunch rush.",
+          "url": "https://www.yelp.com/biz/mercado-de-la-paz-madrid?hrid=r0",
+          "rating": 4
+        },
+        {
+          "text": "A real neighbourhood market, not a tourist one. Cheap and quiet midweek.",
+          "url": "https://www.yelp.com/biz/mercado-de-la-paz-madrid?hrid=r1",
+          "rating": 4
+        }
+      ],
+      "price": "€"
+    },
+    {
+      "id": "yelp-fixture-19-la-venencia",
+      "alias": "la-venencia-madrid",
+      "name": "La Venencia",
+      "url": "https://www.yelp.com/biz/la-venencia-madrid",
+      "review_count": 298,
+      "rating": 4.5,
+      "coordinates": {
+        "latitude": 40.41625,
+        "longitude": -3.69951
+      },
+      "categories": [
+        {
+          "alias": "bars",
+          "title": "Bars"
+        },
+        {
+          "alias": "wine_bars",
+          "title": "Wine Bars"
+        }
+      ],
+      "location": {
+        "address1": "",
+        "city": "Madrid",
+        "country": "ES",
+        "display_address": [
+          "Madrid, Spain"
+        ]
+      },
+      "is_closed": false,
+      "reviews": [
+        {
+          "text": "Sherry only, no photos, no tips. Feels unchanged since the 1930s.",
+          "url": "https://www.yelp.com/biz/la-venencia-madrid?hrid=r0",
+          "rating": 4
+        },
+        {
+          "text": "Quiet, dim, no music. The bartender chalks your tab on the counter.",
+          "url": "https://www.yelp.com/biz/la-venencia-madrid?hrid=r1",
+          "rating": 4
+        }
+      ],
+      "price": "€"
+    },
+    {
+      "id": "yelp-fixture-20-corral-de-la-morería",
+      "alias": "corral-de-la-morería-madrid",
+      "name": "Corral de la Morería",
+      "url": "https://www.yelp.com/biz/corral-de-la-morería-madrid",
+      "review_count": 211,
+      "rating": 4.5,
+      "coordinates": {
+        "latitude": 40.41267,
+        "longitude": -3.71352
+      },
+      "categories": [
+        {
+          "alias": "flamenco",
+          "title": "Flamenco"
+        },
+        {
+          "alias": "spanish",
+          "title": "Spanish"
+        }
+      ],
+      "location": {
+        "address1": "",
+        "city": "Madrid",
+        "country": "ES",
+        "display_address": [
+          "Madrid, Spain"
+        ]
+      },
+      "is_closed": false,
+      "reviews": [
+        {
+          "text": "Serious flamenco, not a tourist revue. Expensive but unforgettable.",
+          "url": "https://www.yelp.com/biz/corral-de-la-morería-madrid?hrid=r0",
+          "rating": 4
+        },
+        {
+          "text": "Book the dinner seating for the better view. A proper night out.",
+          "url": "https://www.yelp.com/biz/corral-de-la-morería-madrid?hrid=r1",
+          "rating": 4
+        }
+      ],
+      "price": "€€€€"
+    },
+    {
+      "id": "yelp-fixture-21-parque-de-el-caprich",
+      "alias": "parque-de-el-capricho-madrid",
+      "name": "Parque de El Capricho",
+      "url": "https://www.yelp.com/biz/parque-de-el-capricho-madrid",
+      "review_count": 96,
+      "rating": 5.0,
+      "coordinates": {
+        "latitude": 40.44851,
+        "longitude": -3.61039
+      },
+      "categories": [
+        {
+          "alias": "parks",
+          "title": "Parks"
+        }
+      ],
+      "location": {
+        "address1": "",
+        "city": "Madrid",
+        "country": "ES",
+        "display_address": [
+          "Madrid, Spain"
+        ]
+      },
+      "is_closed": false,
+      "reviews": [
+        {
+          "text": "Weekends only, and almost nobody knows about it. The most peaceful garden in Madrid.",
+          "url": "https://www.yelp.com/biz/parque-de-el-capricho-madrid?hrid=r0",
+          "rating": 5
+        },
+        {
+          "text": "Very quiet, lots of shade. Bring a book. Free entry.",
+          "url": "https://www.yelp.com/biz/parque-de-el-capricho-madrid?hrid=r1",
+          "rating": 5
+        }
+      ]
+    },
+    {
+      "id": "yelp-fixture-22-taberna-la-carmencit",
+      "alias": "taberna-la-carmencita-madrid",
+      "name": "Taberna La Carmencita",
+      "url": "https://www.yelp.com/biz/taberna-la-carmencita-madrid",
+      "review_count": 176,
+      "rating": 4.0,
+      "coordinates": {
+        "latitude": 40.42247,
+        "longitude": -3.69836
+      },
+      "categories": [
+        {
+          "alias": "spanish",
+          "title": "Spanish"
+        },
+        {
+          "alias": "breakfast_brunch",
+          "title": "Breakfast Brunch"
+        }
+      ],
+      "location": {
+        "address1": "",
+        "city": "Madrid",
+        "country": "ES",
+        "display_address": [
+          "Madrid, Spain"
+        ]
+      },
+      "is_closed": false,
+      "reviews": [
+        {
+          "text": "Beautiful old taberna, organic produce, calm at lunch.",
+          "url": "https://www.yelp.com/biz/taberna-la-carmencita-madrid?hrid=r0",
+          "rating": 4
+        },
+        {
+          "text": "The set lunch menu is good value. Quiet enough to actually talk.",
+          "url": "https://www.yelp.com/biz/taberna-la-carmencita-madrid?hrid=r1",
+          "rating": 4
+        }
+      ],
+      "price": "€€"
+    }
+  ],
+  "total": 23,
+  "region": {
+    "center": {
+      "latitude": 40.4168,
+      "longitude": -3.7038
+    }
+  }
+}

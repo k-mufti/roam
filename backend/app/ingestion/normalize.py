@@ -30,6 +30,27 @@ NOISE_TOKENS = frozenset(
     }
 )
 
+#: Tokens that are real parts of a name but carry almost no *identifying*
+#: power, because dozens of Madrid places share them. A shared token from this
+#: set is NOT evidence that two records are the same place: "Casa Lucio" and
+#: "Casa Botín" both contain "casa" and are 40m apart, yet are unrelated.
+#:
+#: Distinct from NOISE_TOKENS, which are stripped from the matching key
+#: entirely. These are *kept* in the key (they help fuzzy similarity) but are
+#: excluded from the distinctive-token test in the resolver.
+GENERIC_NAME_TOKENS = frozenset(
+    {
+        "casa", "taberna", "tasca", "bodega", "bar", "cafe", "café",
+        "mercado", "market", "plaza", "square", "parque", "park", "jardin",
+        "jardín", "garden", "palacio", "palace", "teatro", "theatre", "theater",
+        "calle", "puerta", "gate", "centro", "centre", "center", "nacional",
+        "national", "real", "royal", "arte", "art", "madrid", "espana",
+        "españa", "spain", "bistro",
+        "brasserie", "club", "house", "grande", "gran", "nuevo", "nueva",
+        "viejo", "vieja", "antigua", "antiguo",
+    }
+)
+
 _PUNCT_RE = re.compile(r"[^\w\s]", re.UNICODE)
 _WS_RE = re.compile(r"\s+")
 
@@ -60,6 +81,18 @@ def normalize_name(name: str) -> str:
         # One meaningful token left: keep it alone ("Restaurante Botín" -> "botin").
         tokens = meaningful
     return " ".join(tokens).strip()
+
+
+def distinctive_tokens(normalized_name: str) -> frozenset[str]:
+    """Tokens from a normalized name that actually identify a place.
+
+    Used by entity resolution as an *anchor*: if two records share one of
+    these, a plausible-but-imperfect fuzzy score becomes much more believable.
+    Short tokens are dropped because 3-letter fragments collide constantly.
+    """
+    return frozenset(
+        t for t in normalized_name.split() if len(t) >= 4 and t not in GENERIC_NAME_TOKENS
+    )
 
 
 def haversine_m(lat1: float, lng1: float, lat2: float, lng2: float) -> float:
