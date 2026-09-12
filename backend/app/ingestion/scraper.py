@@ -132,7 +132,9 @@ class BlogScraperAdapter(SourceAdapter):
         out: list[RawPlace] = []
         headers = {"User-Agent": self.settings.reddit_user_agent}
         targets = _targets_for_city(self.city)
-        with httpx.Client(timeout=REQUEST_TIMEOUT, headers=headers, follow_redirects=True) as client:
+        with httpx.Client(
+            timeout=REQUEST_TIMEOUT, headers=headers, follow_redirects=True
+        ) as client:
             for index, (target_id, target) in enumerate(targets.items()):
                 url = target["url"]
                 if not _robots_allows(client, url, headers["User-Agent"]):
@@ -193,7 +195,7 @@ class BlogScraperAdapter(SourceAdapter):
             name_el = card.select_one(".listing-name")
             if name_el is None:
                 continue
-            name = _clean_text(name_el.get_text(" ", strip=True))
+            name = _clean_name(name_el.get_text(" ", strip=True))
             if not name:
                 continue
 
@@ -296,8 +298,19 @@ def _robots_allows(client: httpx.Client, url: str, user_agent: str) -> bool:
 # --- field extraction -------------------------------------------------------
 
 
+#: MediaWiki artefacts that end up inside listing names: maintenance
+#: annotations ("[ dead link ]", "[ formerly ... ]") and reference markers
+#: ("[1]"). Left in, they pollute both the display name and the matching key —
+#: "[ dead link ] Las Tablas" normalizes to "dead link las tablas".
+_BRACKETED_RE = re.compile(r"\[[^\]]*\]")
+
+
 def _clean_text(value: str) -> str:
     return re.sub(r"\s+", " ", value or "").strip(" .,;:-–")
+
+
+def _clean_name(value: str) -> str:
+    return _clean_text(_BRACKETED_RE.sub(" ", value or ""))
 
 
 def _field(card: Tag, selector: str) -> str | None:

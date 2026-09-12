@@ -59,7 +59,9 @@ DEFAULT_DETAIL_LIMIT = 15
 class YelpAdapter(SourceAdapter):
     source = SourceName.YELP
 
-    def __init__(self, settings, city, *, refresh: bool = False, detail_limit: int | None = None) -> None:
+    def __init__(
+        self, settings, city, *, refresh: bool = False, detail_limit: int | None = None
+    ) -> None:
         super().__init__(settings, city)
         self.refresh = refresh
         self.detail_limit = DEFAULT_DETAIL_LIMIT if detail_limit is None else detail_limit
@@ -189,7 +191,13 @@ class YelpAdapter(SourceAdapter):
             lat=float(lat),
             lng=float(lng),
             address=address,
-            neighborhood=location.get("city"),
+            # Yelp's location.city is the city, not a neighbourhood; storing it
+            # verbatim produced places labelled "Madrid · Madrid".
+            neighborhood=(
+                location.get("city")
+                if (location.get("city") or "").strip().lower() != self.city.name.lower()
+                else None
+            ),
             price_tier=price_tier,
             hours=hours,
             rating=business.get("rating"),

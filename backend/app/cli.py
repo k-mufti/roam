@@ -166,9 +166,9 @@ def cmd_status(args: argparse.Namespace) -> int:
 def cmd_itinerary(args: argparse.Namespace) -> int:
     from datetime import date
 
+    from app.models import Pace
     from app.optimizer.itinerary import build_itinerary
     from app.optimizer.presenter import print_itinerary
-    from app.models import Pace
 
     settings = get_settings()
     start = date.fromisoformat(args.start)

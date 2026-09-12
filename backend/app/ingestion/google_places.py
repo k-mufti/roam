@@ -33,8 +33,8 @@ import httpx
 
 from app.ingestion.base import RawEvidence, RawPlace, SourceAdapter
 from app.ingestion.cache import ResponseCache
-from app.models.enums import SourceName
 from app.ingestion.normalize import GOOGLE_TYPE_MAP, map_category
+from app.models.enums import SourceName
 from app.models.hours import from_google_periods
 
 log = logging.getLogger(__name__)

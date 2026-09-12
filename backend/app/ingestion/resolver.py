@@ -604,4 +604,9 @@ class EntityResolver:
                 ),
             )
         )
-        log.info("flagged possible duplicate: %r <-> %r (conf=%.2f)", left.name, right.name, confidence)
+        log.info(
+            "flagged possible duplicate: %r <-> %r (conf=%.2f)",
+            left.name,
+            right.name,
+            confidence,
+        )

@@ -39,7 +39,6 @@ from geoalchemy2 import Geography
 from sqlalchemy import (
     CheckConstraint,
     DateTime,
-    Enum as SAEnum,
     Float,
     ForeignKey,
     Index,
@@ -49,7 +48,11 @@ from sqlalchemy import (
     UniqueConstraint,
     func,
 )
-from sqlalchemy.dialects.postgresql import ARRAY, JSONB, UUID as PGUUID
+from sqlalchemy import (
+    Enum as SAEnum,
+)
+from sqlalchemy.dialects.postgresql import ARRAY, JSONB
+from sqlalchemy.dialects.postgresql import UUID as PGUUID
 from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column, relationship
 
 from app.models.enums import MergeDecision, PlaceCategory, SourceName
@@ -196,7 +199,9 @@ class SourceSignal(Base):
         PGUUID(as_uuid=True), ForeignKey("places.id", ondelete="CASCADE"), nullable=False
     )
 
-    source: Mapped[SourceName] = mapped_column(_pg_enum(SourceName, "source_name"), nullable=False)
+    source: Mapped[SourceName] = mapped_column(
+        _pg_enum(SourceName, "source_name"), nullable=False
+    )
     #: Stable per-source identifier. For Reddit/blog mentions there is no such
     #: id, so adapters synthesize a deterministic one (e.g. a hash of the
     #: thread id + matched name) to keep re-ingestion idempotent.

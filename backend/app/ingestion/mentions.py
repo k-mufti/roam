@@ -115,7 +115,7 @@ STOP_CAPS = frozenset(
         "many", "more", "less", "very", "too", "unless", "although", "though",
         "because", "while", "after", "before", "during", "instead", "however",
         "is", "are", "was", "were", "be", "been", "do", "does", "did", "can",
-        "could", "should", "would", "will", "shall", "may", "might", "must",
+        "could", "should", "would", "will", "shall", "might", "must",
         "have", "has", "had", "am", "their", "its", "his", "her", "our",
         "day", "days", "week", "weekend", "night", "morning", "afternoon",
         "evening", "lunch", "dinner", "breakfast", "brunch", "tapas",
