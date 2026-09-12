@@ -1,0 +1,4304 @@
+{
+  "_fixture_note": "Recorded-shape Google Places API (New) v1 places:searchNearby response. Coordinates and names are real Madrid places; ratings/review counts are plausible stand-ins. Parsed by the same GooglePlacesAdapter._to_raw_place mapping as live data.",
+  "places": [
+    {
+      "id": "ChIJ_fixture_00_museonacionaldelpr",
+      "displayName": {
+        "text": "Museo Nacional del Prado",
+        "languageCode": "en"
+      },
+      "formattedAddress": "Madrid, Spain",
+      "location": {
+        "latitude": 40.41379,
+        "longitude": -3.69214
+      },
+      "types": [
+        "museum",
+        "tourist_attraction",
+        "point_of_interest",
+        "establishment"
+      ],
+      "primaryType": "museum",
+      "rating": 4.8,
+      "userRatingCount": 96421,
+      "googleMapsUri": "https://maps.google.com/?cid=fixture00",
+      "editorialSummary": {
+        "text": "Spain's national art museum, home to Velázquez, Goya and Bosch.",
+        "languageCode": "en"
+      },
+      "regularOpeningHours": {
+        "openNow": true,
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 20,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 20,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 20,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 20,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 20,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 20,
+              "minute": 0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "ChIJ_fixture_01_museonacionalcentr",
+      "displayName": {
+        "text": "Museo Nacional Centro de Arte Reina Sofía",
+        "languageCode": "en"
+      },
+      "formattedAddress": "Madrid, Spain",
+      "location": {
+        "latitude": 40.40792,
+        "longitude": -3.69455
+      },
+      "types": [
+        "museum",
+        "art_gallery",
+        "point_of_interest",
+        "establishment"
+      ],
+      "primaryType": "museum",
+      "rating": 4.6,
+      "userRatingCount": 45120,
+      "googleMapsUri": "https://maps.google.com/?cid=fixture01",
+      "editorialSummary": {
+        "text": "20th-century art museum housing Picasso's Guernica.",
+        "languageCode": "en"
+      },
+      "regularOpeningHours": {
+        "openNow": true,
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 20,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 20,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 20,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 20,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 20,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 20,
+              "minute": 0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "ChIJ_fixture_02_museonacionalthyss",
+      "displayName": {
+        "text": "Museo Nacional Thyssen-Bornemisza",
+        "languageCode": "en"
+      },
+      "formattedAddress": "Madrid, Spain",
+      "location": {
+        "latitude": 40.41603,
+        "longitude": -3.69473
+      },
+      "types": [
+        "museum",
+        "art_gallery",
+        "point_of_interest",
+        "establishment"
+      ],
+      "primaryType": "museum",
+      "rating": 4.7,
+      "userRatingCount": 28954,
+      "googleMapsUri": "https://maps.google.com/?cid=fixture02",
+      "editorialSummary": {
+        "text": "Private collection spanning the Renaissance to Pop Art.",
+        "languageCode": "en"
+      },
+      "regularOpeningHours": {
+        "openNow": true,
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 20,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 20,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 20,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 20,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 20,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 20,
+              "minute": 0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "ChIJ_fixture_03_palaciorealdemadri",
+      "displayName": {
+        "text": "Palacio Real de Madrid",
+        "languageCode": "en"
+      },
+      "formattedAddress": "Madrid, Spain",
+      "location": {
+        "latitude": 40.41797,
+        "longitude": -3.71425
+      },
+      "types": [
+        "historical_landmark",
+        "tourist_attraction",
+        "point_of_interest",
+        "establishment"
+      ],
+      "primaryType": "historical_landmark",
+      "rating": 4.7,
+      "userRatingCount": 87310,
+      "googleMapsUri": "https://maps.google.com/?cid=fixture03",
+      "editorialSummary": {
+        "text": "The official residence of the Spanish royal family, open to visitors.",
+        "languageCode": "en"
+      },
+      "regularOpeningHours": {
+        "openNow": true,
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 18,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 18,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 18,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 18,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 18,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 18,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 18,
+              "minute": 0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "ChIJ_fixture_04_parquedeelretiro",
+      "displayName": {
+        "text": "Parque de El Retiro",
+        "languageCode": "en"
+      },
+      "formattedAddress": "Madrid, Spain",
+      "location": {
+        "latitude": 40.41531,
+        "longitude": -3.68439
+      },
+      "types": [
+        "park",
+        "tourist_attraction",
+        "point_of_interest",
+        "establishment"
+      ],
+      "primaryType": "park",
+      "rating": 4.8,
+      "userRatingCount": 152003,
+      "googleMapsUri": "https://maps.google.com/?cid=fixture04",
+      "editorialSummary": {
+        "text": "Madrid's central park, with a boating lake and the Crystal Palace.",
+        "languageCode": "en"
+      },
+      "regularOpeningHours": {
+        "openNow": true,
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 6,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 23,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 6,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 23,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 6,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 23,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 6,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 23,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 6,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 23,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 6,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 23,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 6,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 23,
+              "minute": 0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "ChIJ_fixture_05_plazamayor",
+      "displayName": {
+        "text": "Plaza Mayor",
+        "languageCode": "en"
+      },
+      "formattedAddress": "Madrid, Spain",
+      "location": {
+        "latitude": 40.41552,
+        "longitude": -3.70742
+      },
+      "types": [
+        "tourist_attraction",
+        "historical_landmark",
+        "point_of_interest",
+        "establishment"
+      ],
+      "primaryType": "tourist_attraction",
+      "rating": 4.6,
+      "userRatingCount": 118240,
+      "googleMapsUri": "https://maps.google.com/?cid=fixture05",
+      "editorialSummary": {
+        "text": "Arcaded 17th-century square at the heart of old Madrid.",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJ_fixture_06_puertadelsol",
+      "displayName": {
+        "text": "Puerta del Sol",
+        "languageCode": "en"
+      },
+      "formattedAddress": "Madrid, Spain",
+      "location": {
+        "latitude": 40.41689,
+        "longitude": -3.70346
+      },
+      "types": [
+        "tourist_attraction",
+        "point_of_interest",
+        "establishment"
+      ],
+      "primaryType": "tourist_attraction",
+      "rating": 4.4,
+      "userRatingCount": 94880,
+      "googleMapsUri": "https://maps.google.com/?cid=fixture06",
+      "editorialSummary": {
+        "text": "Madrid's symbolic centre and kilometre zero of Spain's road network.",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJ_fixture_07_templodedebod",
+      "displayName": {
+        "text": "Templo de Debod",
+        "languageCode": "en"
+      },
+      "formattedAddress": "Madrid, Spain",
+      "location": {
+        "latitude": 40.42403,
+        "longitude": -3.71783
+      },
+      "types": [
+        "tourist_attraction",
+        "historical_landmark",
+        "point_of_interest",
+        "establishment"
+      ],
+      "primaryType": "tourist_attraction",
+      "rating": 4.5,
+      "userRatingCount": 31207,
+      "googleMapsUri": "https://maps.google.com/?cid=fixture07",
+      "editorialSummary": {
+        "text": "An ancient Egyptian temple relocated to Madrid, famous for sunsets.",
+        "languageCode": "en"
+      },
+      "regularOpeningHours": {
+        "openNow": true,
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 20,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 20,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 20,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 20,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 20,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 20,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 20,
+              "minute": 0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "ChIJ_fixture_08_mercadodesanmiguel",
+      "displayName": {
+        "text": "Mercado de San Miguel",
+        "languageCode": "en"
+      },
+      "formattedAddress": "Madrid, Spain",
+      "location": {
+        "latitude": 40.41535,
+        "longitude": -3.70898
+      },
+      "types": [
+        "market",
+        "tourist_attraction",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "primaryType": "market",
+      "rating": 4.4,
+      "userRatingCount": 76310,
+      "googleMapsUri": "https://maps.google.com/?cid=fixture08",
+      "editorialSummary": {
+        "text": "Glass-walled gourmet food market with tapas counters.",
+        "languageCode": "en"
+      },
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "regularOpeningHours": {
+        "openNow": true,
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 0,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 0,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 0,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 0,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 0,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 0,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 0,
+              "minute": 0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "ChIJ_fixture_09_santamaríalarealde",
+      "displayName": {
+        "text": "Santa María la Real de La Almudena",
+        "languageCode": "en"
+      },
+      "formattedAddress": "Madrid, Spain",
+      "location": {
+        "latitude": 40.4158,
+        "longitude": -3.71446
+      },
+      "types": [
+        "church",
+        "tourist_attraction",
+        "point_of_interest",
+        "establishment"
+      ],
+      "primaryType": "church",
+      "rating": 4.5,
+      "userRatingCount": 29411,
+      "googleMapsUri": "https://maps.google.com/?cid=fixture09",
+      "editorialSummary": {
+        "text": "Madrid's neo-Gothic cathedral, beside the Royal Palace.",
+        "languageCode": "en"
+      },
+      "regularOpeningHours": {
+        "openNow": true,
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 20,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 20,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 20,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 20,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 20,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 20,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 20,
+              "minute": 0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "ChIJ_fixture_10_estadiosantiagober",
+      "displayName": {
+        "text": "Estadio Santiago Bernabéu",
+        "languageCode": "en"
+      },
+      "formattedAddress": "Madrid, Spain",
+      "location": {
+        "latitude": 40.45306,
+        "longitude": -3.68835
+      },
+      "types": [
+        "stadium",
+        "tourist_attraction",
+        "point_of_interest",
+        "establishment"
+      ],
+      "primaryType": "stadium",
+      "rating": 4.7,
+      "userRatingCount": 61208,
+      "googleMapsUri": "https://maps.google.com/?cid=fixture10",
+      "editorialSummary": {
+        "text": "Real Madrid's stadium, with a museum and pitch-side tour.",
+        "languageCode": "en"
+      },
+      "priceLevel": "PRICE_LEVEL_EXPENSIVE",
+      "regularOpeningHours": {
+        "openNow": true,
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 20,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 20,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 20,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 20,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 20,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 20,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 20,
+              "minute": 0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "ChIJ_fixture_11_realjardínbotánico",
+      "displayName": {
+        "text": "Real Jardín Botánico",
+        "languageCode": "en"
+      },
+      "formattedAddress": "Madrid, Spain",
+      "location": {
+        "latitude": 40.41103,
+        "longitude": -3.69063
+      },
+      "types": [
+        "park",
+        "tourist_attraction",
+        "point_of_interest",
+        "establishment"
+      ],
+      "primaryType": "park",
+      "rating": 4.6,
+      "userRatingCount": 18902,
+      "googleMapsUri": "https://maps.google.com/?cid=fixture11",
+      "editorialSummary": {
+        "text": "Eight hectares of botanical collections next to the Prado.",
+        "languageCode": "en"
+      },
+      "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+      "regularOpeningHours": {
+        "openNow": true,
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 6,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 23,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 6,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 23,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 6,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 23,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 6,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 23,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 6,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 23,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 6,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 23,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 6,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 23,
+              "minute": 0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "ChIJ_fixture_12_mataderomadrid",
+      "displayName": {
+        "text": "Matadero Madrid",
+        "languageCode": "en"
+      },
+      "formattedAddress": "Madrid, Spain",
+      "location": {
+        "latitude": 40.39153,
+        "longitude": -3.69754
+      },
+      "types": [
+        "art_gallery",
+        "tourist_attraction",
+        "point_of_interest",
+        "establishment"
+      ],
+      "primaryType": "art_gallery",
+      "rating": 4.5,
+      "userRatingCount": 22140,
+      "googleMapsUri": "https://maps.google.com/?cid=fixture12",
+      "editorialSummary": {
+        "text": "A former slaughterhouse converted into a contemporary arts centre.",
+        "languageCode": "en"
+      },
+      "regularOpeningHours": {
+        "openNow": true,
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 21,
+              "minute": 0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "ChIJ_fixture_13_plazadecibeles",
+      "displayName": {
+        "text": "Plaza de Cibeles",
+        "languageCode": "en"
+      },
+      "formattedAddress": "Madrid, Spain",
+      "location": {
+        "latitude": 40.41931,
+        "longitude": -3.69344
+      },
+      "types": [
+        "tourist_attraction",
+        "historical_landmark",
+        "point_of_interest",
+        "establishment"
+      ],
+      "primaryType": "tourist_attraction",
+      "rating": 4.6,
+      "userRatingCount": 41233,
+      "googleMapsUri": "https://maps.google.com/?cid=fixture13",
+      "editorialSummary": {
+        "text": "Landmark square with the Cybele fountain and Palacio de Cibeles.",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJ_fixture_14_sobrinodebotín",
+      "displayName": {
+        "text": "Sobrino de Botín",
+        "languageCode": "en"
+      },
+      "formattedAddress": "Madrid, Spain",
+      "location": {
+        "latitude": 40.41424,
+        "longitude": -3.70887
+      },
+      "types": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "primaryType": "restaurant",
+      "rating": 4.4,
+      "userRatingCount": 14203,
+      "googleMapsUri": "https://maps.google.com/?cid=fixture14",
+      "editorialSummary": {
+        "text": "Claimed as the world's oldest restaurant, serving roast suckling pig since 1725.",
+        "languageCode": "en"
+      },
+      "priceLevel": "PRICE_LEVEL_EXPENSIVE",
+      "regularOpeningHours": {
+        "openNow": true,
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 13,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 16,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 13,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 16,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 13,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 16,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 13,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 16,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 13,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 16,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 13,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 16,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 13,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 16,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 0,
+              "hour": 20,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 23,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 20,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 23,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 20,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 23,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 20,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 23,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 20,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 23,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 20,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 23,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 20,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 23,
+              "minute": 30
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "ChIJ_fixture_15_casalucio",
+      "displayName": {
+        "text": "Casa Lucio",
+        "languageCode": "en"
+      },
+      "formattedAddress": "Madrid, Spain",
+      "location": {
+        "latitude": 40.41132,
+        "longitude": -3.70992
+      },
+      "types": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "primaryType": "restaurant",
+      "rating": 4.3,
+      "userRatingCount": 9812,
+      "googleMapsUri": "https://maps.google.com/?cid=fixture15",
+      "editorialSummary": {
+        "text": "Castilian institution known for huevos rotos.",
+        "languageCode": "en"
+      },
+      "priceLevel": "PRICE_LEVEL_EXPENSIVE",
+      "regularOpeningHours": {
+        "openNow": true,
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 13,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 16,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 13,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 16,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 13,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 16,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 13,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 16,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 13,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 16,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 13,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 16,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 13,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 16,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 0,
+              "hour": 20,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 23,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 20,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 23,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 20,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 23,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 20,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 23,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 20,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 23,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 20,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 23,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 20,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 23,
+              "minute": 30
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "ChIJ_fixture_16_streetxo",
+      "displayName": {
+        "text": "StreetXO",
+        "languageCode": "en"
+      },
+      "formattedAddress": "Madrid, Spain",
+      "location": {
+        "latitude": 40.42583,
+        "longitude": -3.68892
+      },
+      "types": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "primaryType": "restaurant",
+      "rating": 4.4,
+      "userRatingCount": 6120,
+      "googleMapsUri": "https://maps.google.com/?cid=fixture16",
+      "editorialSummary": {
+        "text": "Dabiz Muñoz's high-volume fusion counter.",
+        "languageCode": "en"
+      },
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "regularOpeningHours": {
+        "openNow": true,
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 13,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 16,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 13,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 16,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 13,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 16,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 13,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 16,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 13,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 16,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 13,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 16,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 0,
+              "hour": 20,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 23,
+              "minute": 45
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 20,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 23,
+              "minute": 45
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 20,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 23,
+              "minute": 45
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 20,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 23,
+              "minute": 45
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 20,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 23,
+              "minute": 45
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 20,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 23,
+              "minute": 45
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "ChIJ_fixture_17_diverxo",
+      "displayName": {
+        "text": "DiverXO",
+        "languageCode": "en"
+      },
+      "formattedAddress": "Madrid, Spain",
+      "location": {
+        "latitude": 40.45917,
+        "longitude": -3.68887
+      },
+      "types": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "primaryType": "restaurant",
+      "rating": 4.5,
+      "userRatingCount": 3284,
+      "googleMapsUri": "https://maps.google.com/?cid=fixture17",
+      "editorialSummary": {
+        "text": "Three-Michelin-star tasting menu, Madrid's most sought-after table.",
+        "languageCode": "en"
+      },
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "regularOpeningHours": {
+        "openNow": true,
+        "periods": [
+          {
+            "open": {
+              "day": 3,
+              "hour": 14,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 16,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 14,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 16,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 14,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 16,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 14,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 16,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 21,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 23,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 21,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 23,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 21,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 23,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 21,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 23,
+              "minute": 0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "ChIJ_fixture_18_tabernalabola",
+      "displayName": {
+        "text": "Taberna La Bola",
+        "languageCode": "en"
+      },
+      "formattedAddress": "Madrid, Spain",
+      "location": {
+        "latitude": 40.41928,
+        "longitude": -3.71184
+      },
+      "types": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "primaryType": "restaurant",
+      "rating": 4.3,
+      "userRatingCount": 7740,
+      "googleMapsUri": "https://maps.google.com/?cid=fixture18",
+      "editorialSummary": {
+        "text": "Family-run taberna famous for cocido madrileño cooked over coals.",
+        "languageCode": "en"
+      },
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "regularOpeningHours": {
+        "openNow": true,
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 13,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 16,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 13,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 16,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 13,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 16,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 13,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 16,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 13,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 16,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 13,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 16,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 13,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 16,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 0,
+              "hour": 20,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 23,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 20,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 23,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 20,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 23,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 20,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 23,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 20,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 23,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 20,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 23,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 20,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 23,
+              "minute": 30
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "ChIJ_fixture_19_tabernalacarmencit",
+      "displayName": {
+        "text": "Taberna La Carmencita",
+        "languageCode": "en"
+      },
+      "formattedAddress": "Madrid, Spain",
+      "location": {
+        "latitude": 40.42253,
+        "longitude": -3.69829
+      },
+      "types": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "primaryType": "restaurant",
+      "rating": 4.4,
+      "userRatingCount": 5402,
+      "googleMapsUri": "https://maps.google.com/?cid=fixture19",
+      "editorialSummary": {
+        "text": "One of Madrid's oldest tabernas, reopened with a market-driven menu.",
+        "languageCode": "en"
+      },
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "regularOpeningHours": {
+        "openNow": true,
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 13,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 16,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 13,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 16,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 13,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 16,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 13,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 16,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 13,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 16,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 13,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 16,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 13,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 16,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 0,
+              "hour": 20,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 23,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 20,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 23,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 20,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 23,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 20,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 23,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 20,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 23,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 20,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 23,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 20,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 23,
+              "minute": 30
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "ChIJ_fixture_20_restaurantesacha",
+      "displayName": {
+        "text": "Restaurante Sacha",
+        "languageCode": "en"
+      },
+      "formattedAddress": "Madrid, Spain",
+      "location": {
+        "latitude": 40.46231,
+        "longitude": -3.68901
+      },
+      "types": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "primaryType": "restaurant",
+      "rating": 4.5,
+      "userRatingCount": 2911,
+      "googleMapsUri": "https://maps.google.com/?cid=fixture20",
+      "editorialSummary": {
+        "text": "Bistro beloved by chefs, known for its tortilla and seafood.",
+        "languageCode": "en"
+      },
+      "priceLevel": "PRICE_LEVEL_EXPENSIVE",
+      "regularOpeningHours": {
+        "openNow": true,
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 13,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 16,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 13,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 16,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 13,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 16,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 13,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 16,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 13,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 16,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 13,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 16,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 13,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 16,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 0,
+              "hour": 20,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 23,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 20,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 23,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 20,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 23,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 20,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 23,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 20,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 23,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 20,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 23,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 20,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 23,
+              "minute": 30
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "ChIJ_fixture_21_casadani",
+      "displayName": {
+        "text": "Casa Dani",
+        "languageCode": "en"
+      },
+      "formattedAddress": "Madrid, Spain",
+      "location": {
+        "latitude": 40.42718,
+        "longitude": -3.68363
+      },
+      "types": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "primaryType": "restaurant",
+      "rating": 4.4,
+      "userRatingCount": 8630,
+      "googleMapsUri": "https://maps.google.com/?cid=fixture21",
+      "editorialSummary": {
+        "text": "Market stall serving what locals argue is Madrid's best tortilla de patatas.",
+        "languageCode": "en"
+      },
+      "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+      "regularOpeningHours": {
+        "openNow": true,
+        "periods": [
+          {
+            "open": {
+              "day": 1,
+              "hour": 9,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 15,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 9,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 15,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 9,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 15,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 9,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 15,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 9,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 15,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 9,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 15,
+              "minute": 0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "ChIJ_fixture_22_lhardy",
+      "displayName": {
+        "text": "Lhardy",
+        "languageCode": "en"
+      },
+      "formattedAddress": "Madrid, Spain",
+      "location": {
+        "latitude": 40.41521,
+        "longitude": -3.70112
+      },
+      "types": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "primaryType": "restaurant",
+      "rating": 4.2,
+      "userRatingCount": 4180,
+      "googleMapsUri": "https://maps.google.com/?cid=fixture22",
+      "editorialSummary": {
+        "text": "Belle Époque dining room and famous consommé counter, open since 1839.",
+        "languageCode": "en"
+      },
+      "priceLevel": "PRICE_LEVEL_EXPENSIVE",
+      "regularOpeningHours": {
+        "openNow": true,
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 13,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 16,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 13,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 16,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 13,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 16,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 13,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 16,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 13,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 16,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 13,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 16,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 13,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 16,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 0,
+              "hour": 20,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 23,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 20,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 23,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 20,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 23,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 20,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 23,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 20,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 23,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 20,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 23,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 20,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 23,
+              "minute": 30
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "ChIJ_fixture_23_elsur",
+      "displayName": {
+        "text": "El Sur",
+        "languageCode": "en"
+      },
+      "formattedAddress": "Madrid, Spain",
+      "location": {
+        "latitude": 40.40884,
+        "longitude": -3.70004
+      },
+      "types": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "primaryType": "restaurant",
+      "rating": 4.5,
+      "userRatingCount": 3120,
+      "googleMapsUri": "https://maps.google.com/?cid=fixture23",
+      "editorialSummary": {
+        "text": "Small neighbourhood restaurant in Lavapiés with a short daily menu.",
+        "languageCode": "en"
+      },
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "regularOpeningHours": {
+        "openNow": true,
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 13,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 16,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 13,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 16,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 13,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 16,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 13,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 16,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 13,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 16,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 13,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 16,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 13,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 16,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 0,
+              "hour": 20,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 23,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 20,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 23,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 20,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 23,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 20,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 23,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 20,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 23,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 20,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 23,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 20,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 23,
+              "minute": 30
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "ChIJ_fixture_24_cafédeoriente",
+      "displayName": {
+        "text": "Café de Oriente",
+        "languageCode": "en"
+      },
+      "formattedAddress": "Madrid, Spain",
+      "location": {
+        "latitude": 40.41843,
+        "longitude": -3.71241
+      },
+      "types": [
+        "cafe",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "primaryType": "cafe",
+      "rating": 4.3,
+      "userRatingCount": 9240,
+      "googleMapsUri": "https://maps.google.com/?cid=fixture24",
+      "editorialSummary": {
+        "text": "Terrace cafe facing the Royal Palace.",
+        "languageCode": "en"
+      },
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "regularOpeningHours": {
+        "openNow": true,
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 8,
+              "minute": 30
+            },
+            "close": {
+              "day": 0,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 8,
+              "minute": 30
+            },
+            "close": {
+              "day": 1,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 8,
+              "minute": 30
+            },
+            "close": {
+              "day": 2,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 8,
+              "minute": 30
+            },
+            "close": {
+              "day": 3,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 8,
+              "minute": 30
+            },
+            "close": {
+              "day": 4,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 8,
+              "minute": 30
+            },
+            "close": {
+              "day": 5,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 8,
+              "minute": 30
+            },
+            "close": {
+              "day": 6,
+              "hour": 21,
+              "minute": 0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "ChIJ_fixture_25_labicicletacafe",
+      "displayName": {
+        "text": "La Bicicleta Cafe",
+        "languageCode": "en"
+      },
+      "formattedAddress": "Madrid, Spain",
+      "location": {
+        "latitude": 40.42654,
+        "longitude": -3.70495
+      },
+      "types": [
+        "cafe",
+        "coffee_shop",
+        "point_of_interest",
+        "establishment"
+      ],
+      "primaryType": "cafe",
+      "rating": 4.4,
+      "userRatingCount": 6120,
+      "googleMapsUri": "https://maps.google.com/?cid=fixture25",
+      "editorialSummary": {
+        "text": "Laptop-friendly cafe on Plaza de San Ildefonso in Malasaña.",
+        "languageCode": "en"
+      },
+      "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+      "regularOpeningHours": {
+        "openNow": true,
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 8,
+              "minute": 30
+            },
+            "close": {
+              "day": 0,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 8,
+              "minute": 30
+            },
+            "close": {
+              "day": 1,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 8,
+              "minute": 30
+            },
+            "close": {
+              "day": 2,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 8,
+              "minute": 30
+            },
+            "close": {
+              "day": 3,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 8,
+              "minute": 30
+            },
+            "close": {
+              "day": 4,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 8,
+              "minute": 30
+            },
+            "close": {
+              "day": 5,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 8,
+              "minute": 30
+            },
+            "close": {
+              "day": 6,
+              "hour": 21,
+              "minute": 0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "ChIJ_fixture_26_hansocafé",
+      "displayName": {
+        "text": "HanSo Café",
+        "languageCode": "en"
+      },
+      "formattedAddress": "Madrid, Spain",
+      "location": {
+        "latitude": 40.42604,
+        "longitude": -3.70208
+      },
+      "types": [
+        "cafe",
+        "coffee_shop",
+        "point_of_interest",
+        "establishment"
+      ],
+      "primaryType": "cafe",
+      "rating": 4.5,
+      "userRatingCount": 4310,
+      "googleMapsUri": "https://maps.google.com/?cid=fixture26",
+      "editorialSummary": {
+        "text": "Specialty coffee bar with a small counter and no-frills seating.",
+        "languageCode": "en"
+      },
+      "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+      "regularOpeningHours": {
+        "openNow": true,
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 8,
+              "minute": 30
+            },
+            "close": {
+              "day": 0,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 8,
+              "minute": 30
+            },
+            "close": {
+              "day": 1,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 8,
+              "minute": 30
+            },
+            "close": {
+              "day": 2,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 8,
+              "minute": 30
+            },
+            "close": {
+              "day": 3,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 8,
+              "minute": 30
+            },
+            "close": {
+              "day": 4,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 8,
+              "minute": 30
+            },
+            "close": {
+              "day": 5,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 8,
+              "minute": 30
+            },
+            "close": {
+              "day": 6,
+              "hour": 21,
+              "minute": 0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "ChIJ_fixture_27_federalcafé",
+      "displayName": {
+        "text": "Federal Café",
+        "languageCode": "en"
+      },
+      "formattedAddress": "Madrid, Spain",
+      "location": {
+        "latitude": 40.42701,
+        "longitude": -3.71073
+      },
+      "types": [
+        "cafe",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "primaryType": "cafe",
+      "rating": 4.3,
+      "userRatingCount": 5890,
+      "googleMapsUri": "https://maps.google.com/?cid=fixture27",
+      "editorialSummary": {
+        "text": "All-day brunch cafe with a quiet terrace on Plaza de las Comendadoras.",
+        "languageCode": "en"
+      },
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "regularOpeningHours": {
+        "openNow": true,
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 8,
+              "minute": 30
+            },
+            "close": {
+              "day": 0,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 8,
+              "minute": 30
+            },
+            "close": {
+              "day": 1,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 8,
+              "minute": 30
+            },
+            "close": {
+              "day": 2,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 8,
+              "minute": 30
+            },
+            "close": {
+              "day": 3,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 8,
+              "minute": 30
+            },
+            "close": {
+              "day": 4,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 8,
+              "minute": 30
+            },
+            "close": {
+              "day": 5,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 8,
+              "minute": 30
+            },
+            "close": {
+              "day": 6,
+              "hour": 21,
+              "minute": 0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "ChIJ_fixture_28_tomacafé",
+      "displayName": {
+        "text": "Toma Café",
+        "languageCode": "en"
+      },
+      "formattedAddress": "Madrid, Spain",
+      "location": {
+        "latitude": 40.42783,
+        "longitude": -3.70621
+      },
+      "types": [
+        "cafe",
+        "coffee_shop",
+        "point_of_interest",
+        "establishment"
+      ],
+      "primaryType": "cafe",
+      "rating": 4.5,
+      "userRatingCount": 5210,
+      "googleMapsUri": "https://maps.google.com/?cid=fixture28",
+      "editorialSummary": {
+        "text": "The cafe widely credited with starting Madrid's specialty coffee scene.",
+        "languageCode": "en"
+      },
+      "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+      "regularOpeningHours": {
+        "openNow": true,
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 8,
+              "minute": 30
+            },
+            "close": {
+              "day": 0,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 8,
+              "minute": 30
+            },
+            "close": {
+              "day": 1,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 8,
+              "minute": 30
+            },
+            "close": {
+              "day": 2,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 8,
+              "minute": 30
+            },
+            "close": {
+              "day": 3,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 8,
+              "minute": 30
+            },
+            "close": {
+              "day": 4,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 8,
+              "minute": 30
+            },
+            "close": {
+              "day": 5,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 8,
+              "minute": 30
+            },
+            "close": {
+              "day": 6,
+              "hour": 21,
+              "minute": 0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "ChIJ_fixture_29_salmonguru",
+      "displayName": {
+        "text": "Salmon Guru",
+        "languageCode": "en"
+      },
+      "formattedAddress": "Madrid, Spain",
+      "location": {
+        "latitude": 40.41432,
+        "longitude": -3.69937
+      },
+      "types": [
+        "bar",
+        "cocktail_bar",
+        "point_of_interest",
+        "establishment"
+      ],
+      "primaryType": "bar",
+      "rating": 4.6,
+      "userRatingCount": 7420,
+      "googleMapsUri": "https://maps.google.com/?cid=fixture29",
+      "editorialSummary": {
+        "text": "Theatrical cocktail bar from Diego Cabrera, a fixture on world bar lists.",
+        "languageCode": "en"
+      },
+      "priceLevel": "PRICE_LEVEL_EXPENSIVE",
+      "regularOpeningHours": {
+        "openNow": true,
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 19,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 2,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 19,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 2,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 19,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 2,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 19,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 2,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 19,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 2,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 19,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 2,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 19,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 2,
+              "minute": 0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "ChIJ_fixture_30_1862drybar",
+      "displayName": {
+        "text": "1862 Dry Bar",
+        "languageCode": "en"
+      },
+      "formattedAddress": "Madrid, Spain",
+      "location": {
+        "latitude": 40.42561,
+        "longitude": -3.71016
+      },
+      "types": [
+        "bar",
+        "cocktail_bar",
+        "point_of_interest",
+        "establishment"
+      ],
+      "primaryType": "bar",
+      "rating": 4.6,
+      "userRatingCount": 3980,
+      "googleMapsUri": "https://maps.google.com/?cid=fixture30",
+      "editorialSummary": {
+        "text": "Dimly lit classic-cocktail bar over two floors in Malasaña.",
+        "languageCode": "en"
+      },
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "regularOpeningHours": {
+        "openNow": true,
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 19,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 2,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 19,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 2,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 19,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 2,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 19,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 2,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 19,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 2,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 19,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 2,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 19,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 2,
+              "minute": 0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "ChIJ_fixture_31_bodegadelaardosa",
+      "displayName": {
+        "text": "Bodega de la Ardosa",
+        "languageCode": "en"
+      },
+      "formattedAddress": "Madrid, Spain",
+      "location": {
+        "latitude": 40.42381,
+        "longitude": -3.70172
+      },
+      "types": [
+        "bar",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "primaryType": "bar",
+      "rating": 4.4,
+      "userRatingCount": 6210,
+      "googleMapsUri": "https://maps.google.com/?cid=fixture31",
+      "editorialSummary": {
+        "text": "Narrow tiled tavern pouring vermouth and pulling salmorejo since 1892.",
+        "languageCode": "en"
+      },
+      "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+      "regularOpeningHours": {
+        "openNow": true,
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 19,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 2,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 19,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 2,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 19,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 2,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 19,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 2,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 19,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 2,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 19,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 2,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 19,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 2,
+              "minute": 0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "ChIJ_fixture_32_angelitamadrid",
+      "displayName": {
+        "text": "Angelita Madrid",
+        "languageCode": "en"
+      },
+      "formattedAddress": "Madrid, Spain",
+      "location": {
+        "latitude": 40.42219,
+        "longitude": -3.70031
+      },
+      "types": [
+        "bar",
+        "wine_bar",
+        "point_of_interest",
+        "establishment"
+      ],
+      "primaryType": "bar",
+      "rating": 4.5,
+      "userRatingCount": 2840,
+      "googleMapsUri": "https://maps.google.com/?cid=fixture32",
+      "editorialSummary": {
+        "text": "Wine bar upstairs, cocktail bar downstairs.",
+        "languageCode": "en"
+      },
+      "priceLevel": "PRICE_LEVEL_EXPENSIVE",
+      "regularOpeningHours": {
+        "openNow": true,
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 19,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 2,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 19,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 2,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 19,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 2,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 19,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 2,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 19,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 2,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 19,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 2,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 19,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 2,
+              "minute": 0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "ChIJ_fixture_33_teatrobarceló",
+      "displayName": {
+        "text": "Teatro Barceló",
+        "languageCode": "en"
+      },
+      "formattedAddress": "Madrid, Spain",
+      "location": {
+        "latitude": 40.42558,
+        "longitude": -3.69823
+      },
+      "types": [
+        "night_club",
+        "bar",
+        "point_of_interest",
+        "establishment"
+      ],
+      "primaryType": "night_club",
+      "rating": 4.0,
+      "userRatingCount": 11240,
+      "googleMapsUri": "https://maps.google.com/?cid=fixture33",
+      "editorialSummary": {
+        "text": "Art Deco theatre turned late-night club on Calle Barceló.",
+        "languageCode": "en"
+      },
+      "priceLevel": "PRICE_LEVEL_EXPENSIVE",
+      "regularOpeningHours": {
+        "openNow": true,
+        "periods": [
+          {
+            "open": {
+              "day": 4,
+              "hour": 23,
+              "minute": 30
+            },
+            "close": {
+              "day": 5,
+              "hour": 6,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 23,
+              "minute": 30
+            },
+            "close": {
+              "day": 6,
+              "hour": 6,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 23,
+              "minute": 30
+            },
+            "close": {
+              "day": 0,
+              "hour": 6,
+              "minute": 0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "ChIJ_fixture_34_hotelriuplazaespañ",
+      "displayName": {
+        "text": "Hotel Riu Plaza España",
+        "languageCode": "en"
+      },
+      "formattedAddress": "Madrid, Spain",
+      "location": {
+        "latitude": 40.42392,
+        "longitude": -3.71264
+      },
+      "types": [
+        "hotel",
+        "lodging",
+        "point_of_interest",
+        "establishment"
+      ],
+      "primaryType": "hotel",
+      "rating": 4.4,
+      "userRatingCount": 18420,
+      "googleMapsUri": "https://maps.google.com/?cid=fixture34",
+      "editorialSummary": {
+        "text": "High-rise hotel with a rooftop observation deck over Gran Vía.",
+        "languageCode": "en"
+      },
+      "priceLevel": "PRICE_LEVEL_EXPENSIVE"
+    },
+    {
+      "id": "ChIJ_fixture_35_onlyyouboutiquehot",
+      "displayName": {
+        "text": "Only YOU Boutique Hotel Madrid",
+        "languageCode": "en"
+      },
+      "formattedAddress": "Madrid, Spain",
+      "location": {
+        "latitude": 40.42293,
+        "longitude": -3.69631
+      },
+      "types": [
+        "hotel",
+        "lodging",
+        "point_of_interest",
+        "establishment"
+      ],
+      "primaryType": "hotel",
+      "rating": 4.6,
+      "userRatingCount": 4120,
+      "googleMapsUri": "https://maps.google.com/?cid=fixture35",
+      "editorialSummary": {
+        "text": "Design hotel in a 19th-century Chueca palace.",
+        "languageCode": "en"
+      },
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE"
+    },
+    {
+      "id": "ChIJ_fixture_36_thehatmadrid",
+      "displayName": {
+        "text": "The Hat Madrid",
+        "languageCode": "en"
+      },
+      "formattedAddress": "Madrid, Spain",
+      "location": {
+        "latitude": 40.41434,
+        "longitude": -3.70765
+      },
+      "types": [
+        "hotel",
+        "lodging",
+        "point_of_interest",
+        "establishment"
+      ],
+      "primaryType": "hotel",
+      "rating": 4.5,
+      "userRatingCount": 3610,
+      "googleMapsUri": "https://maps.google.com/?cid=fixture36",
+      "editorialSummary": {
+        "text": "Rooftop-bar hostel-hotel hybrid a minute from Plaza Mayor.",
+        "languageCode": "en"
+      },
+      "priceLevel": "PRICE_LEVEL_MODERATE"
+    }
+  ]
+}

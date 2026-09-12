@@ -1,0 +1,30 @@
+# Local dev infrastructure for Trip Package.
+#
+# Postgres+PostGIS is the only *required* service. OSRM is optional: the
+# optimizer falls back to a haversine-based travel-time estimator when no
+# routing backend is reachable, so `docker compose up -d db` is enough to run
+# the whole app.
+services:
+  db:
+    # NOTE (Apple Silicon): the official postgis images are published for
+    # amd64 only, so this runs under emulation on an M-series Mac. It works
+    # and is correct, just slower. For a native arm64 build, swap in the
+    # community multi-arch image:  image: imresamu/postgis:16-3.4
+    image: postgis/postgis:16-3.4
+    container_name: trip_package_db
+    environment:
+      POSTGRES_USER: trip
+      POSTGRES_PASSWORD: trip
+      POSTGRES_DB: trip_package
+    ports:
+      - "55432:5432"   # non-default host port so it can't collide with a local brew postgres
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U trip -d trip_package"]
+      interval: 3s
+      timeout: 3s
+      retries: 20
+
+volumes:
+  pgdata:
