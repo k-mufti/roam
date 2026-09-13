@@ -15,7 +15,7 @@ logging.basicConfig(level=logging.INFO, format="%(levelname)-7s %(name)s: %(mess
 settings = get_settings()
 
 app = FastAPI(
-    title="Trip Package API",
+    title="Roam API",
     version="0.1.0",
     description=(
         "Multi-source place aggregation with credibility-weighted scoring and "
@@ -47,7 +47,7 @@ app.include_router(itinerary.router, prefix="/api")
 @app.get("/")
 def root():
     return {
-        "name": "Trip Package API",
+        "name": "Roam API",
         "city": settings.target_city,
         "docs": "/docs",
         "endpoints": [

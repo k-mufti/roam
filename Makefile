@@ -1,4 +1,4 @@
-# Trip Package — common tasks.
+# Roam — common tasks.
 # `make setup && make seed && make dev` takes a clean checkout to a running app.
 
 PY := backend/.venv/bin
@@ -18,23 +18,23 @@ setup: ## Create the venv, install backend + frontend deps
 
 db: ## Start Postgres+PostGIS and wait for it to be healthy
 	docker compose up -d db
-	@until [ "$$(docker inspect -f '{{.State.Health.Status}}' trip_package_db 2>/dev/null)" = "healthy" ]; do \
+	@until [ "$$(docker inspect -f '{{.State.Health.Status}}' roam_db 2>/dev/null)" = "healthy" ]; do \
 		printf '.'; sleep 1; done; echo " database ready"
 
 migrate: db ## Apply database migrations
 	cd backend && .venv/bin/alembic upgrade head
 
 seed: migrate ## Full pipeline: ingest all sources, score, tag
-	$(PY)/trip ingest
-	$(PY)/trip score
-	$(PY)/trip tag
-	$(PY)/trip status
+	$(PY)/roam ingest
+	$(PY)/roam score
+	$(PY)/roam tag
+	$(PY)/roam status
 
 seed-offline: migrate ## Same, but force fixture mode for every source
-	$(PY)/trip ingest --fixtures
-	$(PY)/trip score
-	$(PY)/trip tag
-	$(PY)/trip status
+	$(PY)/roam ingest --fixtures
+	$(PY)/roam score
+	$(PY)/roam tag
+	$(PY)/roam status
 
 api: ## Run the API on :8000
 	cd backend && .venv/bin/uvicorn app.api.main:app --reload --port 8000
@@ -53,7 +53,7 @@ lint: ## Lint backend and typecheck frontend
 	cd frontend && npx tsc -b --noEmit
 
 reset: ## Drop all data and re-seed from scratch
-	docker exec trip_package_db psql -U trip -d trip_package -qc \
+	docker exec roam_db psql -U roam -d roam -qc \
 		"TRUNCATE places, source_signals, text_evidence, merge_reviews, ingest_runs CASCADE;"
 	@$(MAKE) seed-offline
 

@@ -106,7 +106,7 @@ export default function App() {
     <div className="app">
       <aside className="sidebar">
         <div className="brand">
-          <h1>Trip Package</h1>
+          <h1>Roam</h1>
           <div className="sub">
             {facets ? `${facets.city} · ${facets.place_count} places` : "loading…"}
             {provenance && (

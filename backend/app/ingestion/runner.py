@@ -1,6 +1,6 @@
 """Ingestion orchestration.
 
-Each source is independently runnable (`trip ingest --source yelp`) and all of
+Each source is independently runnable (`roam ingest --source yelp`) and all of
 them share one write path through `EntityResolver`, so dedup behaviour cannot
 drift between sources. Every run writes an `IngestRun` audit row recording
 whether it was live or fixture-backed — that is how the README's "what's mocked

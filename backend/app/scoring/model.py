@@ -2,7 +2,7 @@
 
 This is the project's core differentiator, so it is written as pure functions
 over plain dataclasses with no database or ORM anywhere — it can be exercised,
-tested and demoed entirely in isolation (`trip explain "<place>"`).
+tested and demoed entirely in isolation (`roam explain "<place>"`).
 
 ## Why not average the star ratings
 

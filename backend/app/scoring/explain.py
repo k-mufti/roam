@@ -1,6 +1,6 @@
 """Human-readable score explanation — the demo surface for the scoring model.
 
-`trip explain "Museo del Prado"` prints exactly why a place scored what it
+`roam explain "Museo del Prado"` prints exactly why a place scored what it
 scored: every source's raw rating, how shrinkage and z-scoring transformed it,
 each weight component, and how much corroboration contributed. The point is
 that the ranking is defensible line by line rather than a black-box number.

@@ -1,4 +1,4 @@
-# Trip Package
+# Roam
 
 Aggregates places for one city from four independent data sources, deduplicates
 them into single records, ranks them with a **source-credibility weighted**
@@ -221,7 +221,7 @@ of Madrid places share them:
 | Toma Café ↔ Toma Café | 800 m | `toma` | ✳ separate (different branch) |
 
 On the full fixture set: **16/16 true duplicates merged, zero false merges**,
-one genuinely ambiguous pair flagged (`trip review` shows it). Ambiguous pairs
+one genuinely ambiguous pair flagged (`roam review` shows it). Ambiguous pairs
 are never guessed — they are written to `merge_reviews` for a human.
 
 Coordinate-less mentions (Reddit) take a stricter path: they can only *attach*
@@ -238,7 +238,7 @@ an artwork (*Guernica*), a cocktail (*Chipotle Chillón*).
 so it can be demoed in isolation:
 
 ```bash
-backend/.venv/bin/trip explain "Museo del Prado"
+backend/.venv/bin/roam explain "Museo del Prado"
 ```
 
 ```
@@ -375,7 +375,7 @@ from `topic:quiet` / `topic:park` to `topic:tortilla` / `topic:cocktail` /
 ## The optimizer
 
 ```bash
-backend/.venv/bin/trip itinerary --start 2026-09-18 --days 3 --pace moderate
+backend/.venv/bin/roam itinerary --start 2026-09-18 --days 3 --pace moderate
 ```
 
 Pipeline: **rank a candidate pool → cluster geographically per day → schedule
@@ -485,13 +485,13 @@ with a local Homebrew Postgres.
 ## CLI
 
 ```bash
-trip ingest [--source google_places|yelp|reddit|blog] [--fixtures] [--refresh]
-trip score                    # recompute composite scores
-trip tag                      # regenerate tags
-trip explain "<place name>"   # score breakdown, the scoring demo
-trip review                   # ambiguous merges awaiting a human
-trip status                   # what's in the database
-trip itinerary --start YYYY-MM-DD --days 3 --pace moderate --tag quiet
+roam ingest [--source google_places|yelp|reddit|blog] [--fixtures] [--refresh]
+roam score                    # recompute composite scores
+roam tag                      # regenerate tags
+roam explain "<place name>"   # score breakdown, the scoring demo
+roam review                   # ambiguous merges awaiting a human
+roam status                   # what's in the database
+roam itinerary --start YYYY-MM-DD --days 3 --pace moderate --tag quiet
 ```
 
 ## API

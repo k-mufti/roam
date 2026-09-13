@@ -71,14 +71,14 @@ class Settings(BaseSettings):
         extra="ignore",
     )
 
-    database_url: str = "postgresql+psycopg://trip:trip@localhost:55432/trip_package"
+    database_url: str = "postgresql+psycopg://roam:roam@localhost:55432/roam"
     target_city: str = "Madrid"
 
     google_places_api_key: str | None = None
     yelp_api_key: str | None = None
     reddit_client_id: str | None = None
     reddit_client_secret: str | None = None
-    reddit_user_agent: str = "trip-package/0.1 (portfolio project)"
+    reddit_user_agent: str = "roam/0.1 (portfolio project)"
 
     #: `haversine` | `osrm` | `google`. Defaults to haversine — see
     #: app/optimizer/travel.py for why the public OSRM demo is not usable for

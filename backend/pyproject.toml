@@ -1,5 +1,5 @@
 [project]
-name = "trip-package-backend"
+name = "roam-backend"
 version = "0.1.0"
 description = "Multi-source place aggregation, credibility-weighted scoring, and itinerary optimization."
 requires-python = ">=3.11,<3.14"
@@ -44,7 +44,7 @@ dev = [
 ]
 
 [project.scripts]
-trip = "app.cli:main"
+roam = "app.cli:main"
 
 [build-system]
 requires = ["setuptools>=68"]

@@ -5,7 +5,7 @@ import { SOURCE_LABELS } from "../constants";
 
 /**
  * The scoring model's demo surface in the UI: the same per-source breakdown the
- * `trip explain` CLI prints. The point is that a ranking is defensible line by
+ * `roam explain` CLI prints. The point is that a ranking is defensible line by
  * line rather than being an opaque number.
  */
 export default function ScoreDrawer({
@@ -48,7 +48,7 @@ export default function ScoreDrawer({
             / 100
           </div>
 
-          {!b && <div className="muted">No breakdown stored. Run `trip score`.</div>}
+          {!b && <div className="muted">No breakdown stored. Run `roam score`.</div>}
 
           {b && (
             <>

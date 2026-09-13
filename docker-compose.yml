@@ -1,4 +1,4 @@
-# Local dev infrastructure for Trip Package.
+# Local dev infrastructure for Roam.
 #
 # Postgres+PostGIS is the only *required* service. OSRM is optional: the
 # optimizer falls back to a haversine-based travel-time estimator when no
@@ -11,17 +11,17 @@ services:
     # and is correct, just slower. For a native arm64 build, swap in the
     # community multi-arch image:  image: imresamu/postgis:16-3.4
     image: postgis/postgis:16-3.4
-    container_name: trip_package_db
+    container_name: roam_db
     environment:
-      POSTGRES_USER: trip
-      POSTGRES_PASSWORD: trip
-      POSTGRES_DB: trip_package
+      POSTGRES_USER: roam
+      POSTGRES_PASSWORD: roam
+      POSTGRES_DB: roam
     ports:
       - "55432:5432"   # non-default host port so it can't collide with a local brew postgres
     volumes:
       - pgdata:/var/lib/postgresql/data
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U trip -d trip_package"]
+      test: ["CMD-SHELL", "pg_isready -U roam -d roam"]
       interval: 3s
       timeout: 3s
       retries: 20

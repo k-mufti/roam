@@ -1,4 +1,4 @@
-"""`trip` — the operator CLI.
+"""`roam` — the operator CLI.
 
 Deliberately a plain argparse script with no scheduler. The spec calls for
 "a script/CLI runner is fine, no Kafka/Celery": ingestion here is a batch job
@@ -190,7 +190,7 @@ def cmd_itinerary(args: argparse.Namespace) -> int:
 
 
 def build_parser() -> argparse.ArgumentParser:
-    parser = argparse.ArgumentParser(prog="trip", description="Trip Package operator CLI")
+    parser = argparse.ArgumentParser(prog="roam", description="Roam operator CLI")
     parser.add_argument("-v", "--verbose", action="store_true")
     sub = parser.add_subparsers(dest="command", required=True)
 
