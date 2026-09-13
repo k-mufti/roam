@@ -113,7 +113,8 @@ def test_itinerary_generation(client):
 
 
 def test_itinerary_rejects_bad_input(client):
-    assert client.post("/api/itinerary", json={"start_date": "2026-09-18", "days": 0}).status_code == 422
+    bad_days = client.post("/api/itinerary", json={"start_date": "2026-09-18", "days": 0})
+    assert bad_days.status_code == 422
     assert client.post("/api/itinerary", json={"days": 3}).status_code == 422
 
 
