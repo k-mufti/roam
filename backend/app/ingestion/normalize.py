@@ -157,6 +157,8 @@ GOOGLE_TYPE_MAP: tuple[tuple[str, PlaceCategory], ...] = (
 YELP_ALIAS_MAP: tuple[tuple[str, PlaceCategory], ...] = (
     ("nightlife", PlaceCategory.NIGHTLIFE),
     ("danceclub", PlaceCategory.NIGHTLIFE),
+    ("flamenco", PlaceCategory.NIGHTLIFE),
+    ("jazzandblues", PlaceCategory.NIGHTLIFE),
     ("cocktailbar", PlaceCategory.BAR),
     ("wine_bar", PlaceCategory.BAR),
     ("bars", PlaceCategory.BAR),
@@ -171,6 +173,12 @@ YELP_ALIAS_MAP: tuple[tuple[str, PlaceCategory], ...] = (
     ("hotels", PlaceCategory.HOTEL),
     ("shopping", PlaceCategory.SHOPPING),
     ("restaurants", PlaceCategory.RESTAURANT),
+    ("tapas", PlaceCategory.RESTAURANT),
+    ("spanish", PlaceCategory.RESTAURANT),
+    ("asianfusion", PlaceCategory.RESTAURANT),
+    ("desserts", PlaceCategory.CAFE),
+    ("food_court", PlaceCategory.RESTAURANT),
+    ("markets", PlaceCategory.RESTAURANT),
     ("food", PlaceCategory.RESTAURANT),
 )
 

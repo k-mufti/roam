@@ -66,3 +66,8 @@ target-version = "py311"
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "UP", "B"]
+
+[tool.ruff.lint.per-file-ignores]
+# B008 flags function calls in argument defaults. `Depends(...)` in a default is
+# FastAPI's documented dependency-injection syntax, not a mistake.
+"app/api/routes/*.py" = ["B008"]

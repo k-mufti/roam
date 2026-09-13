@@ -54,11 +54,23 @@ class Pace(StrEnum):
     PACKED = "packed"
 
 
-#: Stops per day, and target minutes on-site, by pace.
+#: Stops per day and the day's window, by pace.
+#:
+#: Counts include meals. An earlier version used 3/5/7, which looked reasonable
+#: until the generated itineraries turned out to contain no lunch or dinner at
+#: all: five stops fills 09:00-16:30 with sightseeing and the cap stops there.
+#: A day needs roughly two meal slots plus the sights, so the counts are higher
+#: and `meals_per_day` states the reservation explicitly.
 PACE_PROFILES: dict[Pace, dict[str, int]] = {
-    Pace.RELAXED: {"stops_per_day": 3, "day_start_hour": 10, "day_end_hour": 21},
-    Pace.MODERATE: {"stops_per_day": 5, "day_start_hour": 9, "day_end_hour": 22},
-    Pace.PACKED: {"stops_per_day": 7, "day_start_hour": 8, "day_end_hour": 23},
+    Pace.RELAXED: {
+        "stops_per_day": 4, "day_start_hour": 10, "day_end_hour": 22, "meals_per_day": 1,
+    },
+    Pace.MODERATE: {
+        "stops_per_day": 6, "day_start_hour": 9, "day_end_hour": 23, "meals_per_day": 2,
+    },
+    Pace.PACKED: {
+        "stops_per_day": 8, "day_start_hour": 8, "day_end_hour": 24, "meals_per_day": 2,
+    },
 }
 
 #: Default dwell time per category, in minutes. Used when a place has no

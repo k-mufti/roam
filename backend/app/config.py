@@ -80,9 +80,16 @@ class Settings(BaseSettings):
     reddit_client_secret: str | None = None
     reddit_user_agent: str = "trip-package/0.1 (portfolio project)"
 
-    routing_provider: str = "osrm"
+    #: `haversine` | `osrm` | `google`. Defaults to haversine — see
+    #: app/optimizer/travel.py for why the public OSRM demo is not usable for
+    #: pedestrian routing.
+    routing_provider: str = "haversine"
     osrm_base_url: str = "https://router.project-osrm.org"
+    #: Escape hatch to use the public OSRM demo anyway, knowing it is car-only.
+    osrm_allow_public_demo: bool = False
     google_directions_api_key: str | None = None
+
+    travel_mode: str = "walk"
 
     ingestion_force_fixtures: bool = False
 

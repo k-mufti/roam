@@ -100,6 +100,16 @@ def earliest_open(hours: dict[str, Any] | None, weekday: int, not_before_min: in
     return None
 
 
+def all_week(intervals: list[tuple[str, str]]) -> dict[str, Any]:
+    """Build an hours dict with the same intervals every day.
+
+    Used for category-level default windows (see
+    `app.optimizer.schedule.effective_hours`), not for real source data.
+    """
+    spec = [{"open": o, "close": c} for o, c in intervals]
+    return {key: list(spec) for key in DAY_KEYS}
+
+
 def from_google_periods(periods: list[dict[str, Any]] | None) -> dict[str, Any] | None:
     """Convert Google Places `regularOpeningHours.periods` to our shape."""
     if periods is None:
