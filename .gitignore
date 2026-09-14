@@ -17,8 +17,9 @@ backend/.cache/
 
 # Node
 node_modules/
-frontend/dist/
-frontend/.vite/
+dist/
+.vite/
+*.tsbuildinfo
 
 # Editors / OS
 .DS_Store
